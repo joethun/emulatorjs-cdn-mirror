@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="Logo.svg" width="250"/><br>
+  <img src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/Logo-light.png" width="275"/><br>
   
   #
   
