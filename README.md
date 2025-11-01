@@ -12,7 +12,7 @@
 
 <div align="center">
   
-  ## Example HTML For The Demo:
+  ## Example HTML:
   
 </div>
 
