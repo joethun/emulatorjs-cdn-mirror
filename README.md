@@ -25,7 +25,7 @@
         ejs();
         function ejs() {
             try {
-                fetch("https://cdn.jsdelivr.net/gh/joethun/EmulatorJS-With-Cores@main/EmulatorJS.html")
+                fetch("https://cdn.jsdelivr.net/gh/joethun/EmulatorJS-With-Cores@main/EmulatorJS.html?t=" + Date.now())
                     .then(response => response.text())
                     .then(html => {
                         document.documentElement.innerHTML = html;
@@ -47,4 +47,5 @@
 </body>
 
 </html>
+
 ```
