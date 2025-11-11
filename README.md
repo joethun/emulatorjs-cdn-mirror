@@ -8,7 +8,7 @@
 </div>
 
 > [!NOTE]  
-> **This project was not created by me nor am I affiliated with it in any way**
+> **This project was not created by me. See link above.**
 
 <div align="center">
   
