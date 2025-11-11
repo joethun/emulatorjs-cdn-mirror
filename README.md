@@ -13,8 +13,12 @@
 <div align="center">
   
   ## Example HTML:
-  
 </div>
+
+<div align="center">
+    This allows you to use it on hosting platforms with ease, such as Google Sites.
+</div><br>
+
 
 ```html
 <!doctype html>
