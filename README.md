@@ -16,7 +16,7 @@ Depending on which version you would like to use, set your EJS_pathtodata to one
 
 ## Usage (Google Sites / Hosting)
 
-This allows you to use it on hosting platforms with ease, such as Google Sites.
+This simple HTML allows you to use it on hosting platforms with ease, such as Google Sites.
 
 ```html
 <!doctype html>
