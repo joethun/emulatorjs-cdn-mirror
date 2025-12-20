@@ -9,7 +9,7 @@
 
 ## Configuration
 
-If you would like to switch between versions, set your path to data to the following:
+Depending on which version you would like to use, set your EJS_pathtodata to one of the following:
 
 - **Nightly**: `https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/nightly/`
 - **Stable**: `https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/stable/`
