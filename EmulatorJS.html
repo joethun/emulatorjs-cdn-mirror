@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/Logo.svg" rel="icon">
+    <link href="https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror/Logo.svg" rel="icon">
 
     <style>
         * {
@@ -115,6 +115,7 @@
     <div id="top">
         <img src="https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror/Logo.svg" alt="EmulatorJS Logo"
             class="logo">
+        <h1>EmulatorJS</h1>
     </div>
 
     <div id="box">
@@ -209,8 +210,6 @@
 
             const runEmulator = async (fileOrPath, isUpload = false) => {
                 try {
-                    [els.top, els.box, els.version].forEach(el => el?.remove());
-
                     let romUrl, romName, extension;
 
                     if (isUpload) {
@@ -227,6 +226,7 @@
                     const gameName = parts.join('.');
 
                     const core = await detectCore(extension);
+                    [els.top, els.box, els.version].forEach(el => el?.remove());
 
                     const params = getParams();
                     const debug = params.get('debug') === 'true' || params.get('debug') === '1';
