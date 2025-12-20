@@ -19,7 +19,7 @@ jobs:
 
       - name: download
         run: |
-          wget -m -np -nH --cut-dirs=0 -R "index.html*" -e robots=off https://cdn.emulatorjs.org/stable/data/
+          wget -m -np -nH --cut-dirs=2 -R "index.html*" -e robots=off -P stable https://cdn.emulatorjs.org/stable/data/
 
       - name: commit and push
         run: |
