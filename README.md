@@ -13,3 +13,5 @@ Depending on which version you would like to use, set your EJS_pathtodata to one
 
 - **Nightly**: `https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/nightly/`
 - **Stable**: `https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/stable/`
+
+Keep in mind that the nightly builds of EmulatorJS are somewhat experimental and might have bugs. 
