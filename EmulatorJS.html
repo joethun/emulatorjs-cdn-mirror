@@ -1,1 +1,294 @@
-<!doctype html><meta charset="utf-8"><meta content="width=device-width,initial-scale=1"name="viewport"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"rel="stylesheet"><link href="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/favicon.ico"rel="icon"><title>EmulatorJS</title><style>*{margin:0;padding:0;box-sizing:border-box}body{height:100vh;background:#000;color:#fff;display:flex;align-items:center;justify-content:center;flex-direction:column;font-family:Inter,sans-serif;overflow:hidden}#top{display:flex;flex-direction:column;align-items:center;margin:5px}.logo{width:15vw;height:15vh}#box{position:relative;width:50vmin;height:32.5vmin;max-width:80%;max-height:80%;padding:10px;margin:5px;background:#333;border:2px solid #555;border-radius:.4em;color:#aaa;font-size:22px;font-weight:700;text-align:center;display:flex;align-items:center;justify-content:center;flex-direction:column;transition:.2s;overflow:hidden}#box:hover,#box[drag]{border-color:#38f;color:#ddd}#input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:pointer}#display{width:100%;height:100%}button,select{padding:.6em .4em;margin:.5em;width:15em;max-width:100%;font-family:Inter,sans-serif;font-size:16px;font-weight:700;background:#444;color:#fff;border:1px solid #555;border-radius:.4em;cursor:pointer;transition:.2s;appearance:none}button:hover,select:hover{background:#666}</style><div id="top"><img alt="EmulatorJS Logo"class="logo"src="https://cdn.jsdelivr.net/gh/joethun/EmulatorJS-With-Cores/Logo.svg"></div><div id="box"><input id="input"type="file">Drag ROM file or Click Here</div><script>(()=>{const p=new URLSearchParams(location.search),d=p.get('debug')==='true'||p.get('debug')==='1',t=(p.get('threads')==='true'||p.get('threads')==='1')&&!!window.SharedArrayBuffer,c={fds:"nes",nes:"nes",unif:"nes",unf:"nes",gb:"gb",gbc:"gbc",gba:"gba",smc:"snes",sfc:"snes",swc:"snes",vb:"vb",vboy:"vb",z64:"n64",n64:"n64",nds:"nds",sms:"segaMS",md:"segaMD",gen:"segaMD",smd:"segaMD",gg:"segaGG","32x":"sega32x",cso:"psp",pbp:"psp",a26:"atari2600",a52:"atari5200",a78:"atari7800",lnx:"lynx",j64:"jaguar",jag:"jaguar",d64:"vice_x64",t64:"vice_x64",tap:"vice_x64",crt:"vice_x64",col:"coleco",cv:"coleco",pce:"pce",ngp:"ngp",ngc:"ngp",ws:"ws",wsc:"ws"},s={'Nintendo NES':'nes','Nintendo GB':'gb','Nintendo SNES':'snes','Nintendo VB':'vb','Nintendo 64':'n64','Nintendo GBC':'gbc','Nintendo GBA':'gba','Nintendo DS':'nds','Sega MS':'segaMS','Sega Gen/MD':'segaMD','Sega GG':'segaGG','Sega CD':'segaCD','Sega 32X':'sega32x','Sega Saturn':'segaSaturn','Sony PS1':'psx','Sony PSP':'psp','Atari 2600':'atari2600','Atari 5200':'atari5200','Atari 7800':'atari7800','Atari Lynx':'lynx','Atari Jaguar':'jaguar','Panasonic 3DO':'opera','Arcade (FBNeo)':'arcade','Arcade (M.A.M.E)':'mame2003_plus','Microsoft DOS':'dosbox_pure','Commodore PET':'vice_xpet','Commodore VIC20':'vice_xvic','Commodore Amiga':'amiga','Commodore 64':'vice_x64','Commodore 128':'vice_x128','Commodore P/4':'vice_xplus4','ColecoVision':'coleco','NEC TurboGrafx-16':'pce','NEC PC-FX':'pcfx','SNK NGP':'ngp','Bandai WS':'ws'};const box=document.getElementById('box'),input=document.getElementById('input');const detectCore=e=>c[e]?c[e]:new Promise(r=>{const e=document.createElement('select'),t=document.createElement('button');Object.keys(s).sort().forEach(t=>{const r=document.createElement('option');r.value=s[t],r.textContent=t,e.appendChild(r)}),t.textContent='Load Game',t.onclick=()=>r(e.value),box.innerHTML='',box.appendChild(e),box.appendChild(t)});const run=async(e,r)=>{try{const o=e?input.files[0]:null,a=e?o:`roms/${r}`,n=e?o.name:r,i=n.split('.'),l=i.pop(),m=i.join('.'),u=await detectCore(l);document.getElementById('top')?.remove();box.remove();const g=document.createElement('div'),b=document.createElement('div');g.id='display',b.id='game',g.appendChild(b),document.body.appendChild(g);Object.assign(window,{EJS_backgroundColor:'#000000',EJS_player:'#game',EJS_gameName:m,EJS_biosUrl:'',EJS_gameUrl:a,EJS_core:u,EJS_pathtodata:'https://cdn.jsdelivr.net/gh/joethun/EmulatorJS-With-Cores/',EJS_startOnLoaded:!0,EJS_DEBUG_XX:d,EJS_disableDatabases:!0,EJS_threads:t,EJS_Buttons:{exitEmulation:!1,cacheManager:!1}});const h=document.createElement('script');h.src='https://cdn.jsdelivr.net/gh/joethun/EmulatorJS-With-Cores/loader.js',document.body.appendChild(h)}catch(error){console.error("Error during emulation setup:",error);const errorMessage=document.createElement('p');errorMessage.textContent='Could not load emulator. Check console for details.';errorMessage.style.color='#ff004c';box.innerHTML='';box.appendChild(errorMessage)}};p.get('rom')&&run(!1,p.get('rom')),input.onchange=()=>run(!0),box.ondragover=()=>box.setAttribute('drag','true'),box.ondragleave=()=>box.removeAttribute('drag')})();</script>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="EmulatorJS - Web-based retro game emulator">
+    <title>EmulatorJS</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/Logo.svg" rel="icon">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            align-items: center;
+            background: #000;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            font-family: Inter, sans-serif;
+            height: 100vh;
+            justify-content: center;
+            overflow: hidden;
+        }
+
+        #top {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            margin: 5px;
+        }
+
+        .logo {
+            height: 180px;
+            width: 180px;
+        }
+
+        #box {
+            align-items: center;
+            background: #333;
+            border-radius: .4em;
+            border: 2px solid #555;
+            color: #aaa;
+            display: flex;
+            flex-direction: column;
+            font-size: 22px;
+            font-weight: 700;
+            height: 380px;
+            justify-content: center;
+            margin: 5px;
+            max-height: 80%;
+            max-width: 80%;
+            overflow: hidden;
+            padding: 10px;
+            position: relative;
+            text-align: center;
+            transition: .2s;
+            width: 640px;
+        }
+
+        #box:hover,
+        #box[data-drag="true"] {
+            border-color: #38f;
+            color: #ddd;
+        }
+
+        #input {
+            cursor: pointer;
+            height: 100%;
+            inset: 0;
+            opacity: 0;
+            position: absolute;
+            width: 100%;
+        }
+
+        #display {
+            height: 100%;
+            width: 100%;
+        }
+
+        button,
+        select {
+            appearance: none;
+            background: #444;
+            border-radius: .4em;
+            border: 1px solid #555;
+            color: #fff;
+            cursor: pointer;
+            font-family: Inter, sans-serif;
+            font-size: 16px;
+            font-weight: 700;
+            margin: .5em;
+            max-width: 100%;
+            padding: .6em .4em;
+            transition: .2s;
+            width: 15em;
+        }
+
+        button:hover,
+        select:hover {
+            background: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="top">
+        <img src="https://cdn.jsdelivr.net/gh/joethun/EmulatorJS-With-Cores/Logo.svg" alt="EmulatorJS Logo"
+            class="logo">
+    </div>
+
+    <div id="box">
+        <input id="input" type="file"
+            accept=".iso,.cso,.pbp,.bin,.rom,.nes,.sfc,.smc,.gb,.gbc,.gba,.nds,.n64,.z64,.md,.smd,.gen,.gg,.sms,.zip">
+        Drag ROM file or Click Here
+    </div>
+
+    <select id="version-select">
+        <option value="stable">Stable</option>
+        <option value="nightly">Nightly</option>
+    </select>
+
+    <script>
+        (() => {
+            'use strict';
+
+            const CDN_BASE = 'https://cdn.jsdelivr.net/gh/joethun/EmulatorJS-With-Cores';
+
+            const CORE_MAPPINGS = {
+                fds: "nes", nes: "nes", unif: "nes", unf: "nes",
+                gb: "gb", gbc: "gbc", gba: "gba",
+                smc: "snes", sfc: "snes", swc: "snes",
+                vb: "vb", vboy: "vb",
+                z64: "n64", n64: "n64",
+                nds: "nds",
+                sms: "segaMS", md: "segaMD", gen: "segaMD", smd: "segaMD", gg: "segaGG", "32x": "sega32x",
+                cso: "psp", pbp: "psp",
+                a26: "atari2600", a52: "atari5200", a78: "atari7800", lnx: "lynx", j64: "jaguar", jag: "jaguar",
+                d64: "vice_x64", t64: "vice_x64", tap: "vice_x64", crt: "vice_x64",
+                col: "coleco", cv: "coleco",
+                pce: "pce", ngp: "ngp", ngc: "ngp", ws: "ws", wsc: "ws"
+            };
+
+            const SYSTEM_NAMES = {
+                'Nintendo NES': 'nes', 'Nintendo GB': 'gb', 'Nintendo SNES': 'snes',
+                'Nintendo VB': 'vb', 'Nintendo 64': 'n64', 'Nintendo GBC': 'gbc',
+                'Nintendo GBA': 'gba', 'Nintendo DS': 'nds',
+                'Sega MS': 'segaMS', 'Sega Gen/MD': 'segaMD', 'Sega GG': 'segaGG',
+                'Sega CD': 'segaCD', 'Sega 32X': 'sega32x', 'Sega Saturn': 'segaSaturn',
+                'Sony PS1': 'psx', 'Sony PSP': 'psp',
+                'Atari 2600': 'atari2600', 'Atari 5200': 'atari5200', 'Atari 7800': 'atari7800',
+                'Atari Lynx': 'lynx', 'Atari Jaguar': 'jaguar',
+                'Panasonic 3DO': 'opera', 'Arcade (FBNeo)': 'arcade', 'Arcade (M.A.M.E)': 'mame2003_plus',
+                'Microsoft DOS': 'dosbox_pure',
+                'Commodore PET': 'vice_xpet', 'Commodore VIC20': 'vice_xvic', 'Commodore Amiga': 'amiga',
+                'Commodore 64': 'vice_x64', 'Commodore 128': 'vice_x128', 'Commodore P/4': 'vice_xplus4',
+                'ColecoVision': 'coleco',
+                'NEC TurboGrafx-16': 'pce', 'NEC PC-FX': 'pcfx',
+                'SNK NGP': 'ngp', 'Bandai WS': 'ws'
+            };
+
+            const els = {
+                box: document.getElementById('box'),
+                input: document.getElementById('input'),
+                version: document.getElementById('version-select'),
+                top: document.getElementById('top')
+            };
+
+            const getParams = () => new URLSearchParams(window.location.search);
+
+            const detectCore = async (extension) => {
+                const ext = extension.toLowerCase();
+                if (CORE_MAPPINGS[ext]) {
+                    return CORE_MAPPINGS[ext];
+                }
+
+                return new Promise((resolve) => {
+                    const select = document.createElement('select');
+                    const button = document.createElement('button');
+
+                    Object.keys(SYSTEM_NAMES).sort().forEach(sysName => {
+                        const option = document.createElement('option');
+                        option.value = SYSTEM_NAMES[sysName];
+                        option.textContent = sysName;
+                        select.appendChild(option);
+                    });
+
+                    button.textContent = 'Load Game';
+                    button.onclick = () => resolve(select.value);
+
+                    els.box.innerHTML = '';
+                    els.box.appendChild(select);
+                    els.box.appendChild(button);
+                });
+            };
+
+            const loadScript = (src) => {
+                const script = document.createElement('script');
+                script.src = src;
+                document.body.appendChild(script);
+            };
+
+            const runEmulator = async (fileOrPath, isUpload = false) => {
+                try {
+                    [els.top, els.box, els.version].forEach(el => el?.remove());
+
+                    let romUrl, romName, extension;
+
+                    if (isUpload) {
+                        const file = fileOrPath;
+                        romUrl = file;
+                        romName = file.name;
+                    } else {
+                        romUrl = `roms/${fileOrPath}`;
+                        romName = fileOrPath;
+                    }
+
+                    const parts = romName.split('.');
+                    extension = parts.pop();
+                    const gameName = parts.join('.');
+
+                    const core = await detectCore(extension);
+
+                    const params = getParams();
+                    const debug = params.get('debug') === 'true' || params.get('debug') === '1';
+                    const threads = (params.get('threads') === 'true' || params.get('threads') === '1')
+                        && !!window.SharedArrayBuffer;
+
+                    const version = els.version.value;
+                    const cdnPath = `${CDN_BASE}/${version}/`;
+
+                    const displayDiv = document.createElement('div');
+                    displayDiv.id = 'display';
+
+                    const gameDiv = document.createElement('div');
+                    gameDiv.id = 'game';
+                    displayDiv.appendChild(gameDiv);
+                    document.body.appendChild(displayDiv);
+
+                    window.EJS_backgroundColor = '#000000';
+                    window.EJS_player = '#game';
+                    window.EJS_gameName = gameName;
+                    window.EJS_biosUrl = '';
+                    window.EJS_gameUrl = romUrl;
+                    window.EJS_core = core;
+                    window.EJS_pathtodata = cdnPath;
+                    window.EJS_startOnLoaded = true;
+                    window.EJS_DEBUG_XX = debug;
+                    window.EJS_disableDatabases = true;
+                    window.EJS_threads = threads;
+                    window.EJS_Buttons = { exitEmulation: false, cacheManager: false };
+
+                    loadScript(cdnPath + 'loader.js');
+
+                } catch (error) {
+                    console.error("Emulator setup failed:", error);
+                    if (document.body.contains(els.box)) {
+                        els.box.innerHTML = '<p style="color:#ff004c">Emulator Error. See console.</p>';
+                    }
+                }
+            };
+
+            const handleFileSelect = () => {
+                if (els.input.files && els.input.files[0]) {
+                    runEmulator(els.input.files[0], true);
+                }
+            };
+
+            const handleDragOver = () => els.box.dataset.drag = "true";
+            const handleDragLeave = () => delete els.box.dataset.drag;
+
+            const params = getParams();
+            const romParam = params.get('rom');
+            if (romParam) {
+                runEmulator(romParam, false);
+            }
+
+            els.input.addEventListener('change', handleFileSelect);
+            els.box.addEventListener('dragover', handleDragOver);
+            els.box.addEventListener('dragleave', handleDragLeave);
+
+        })();
+    </script>
+</body>
+
+</html>

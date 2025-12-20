@@ -1,0 +1,34 @@
+name: mirror stable cdn
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  mirror-cdn:
+    runs-on: ubuntu-latest
+    timeout-minutes: 360
+    
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: download
+        run: |
+          wget -m -np -nH --cut-dirs=0 -R "index.html*" -e robots=off https://cdn.emulatorjs.org/stable/data/
+
+      - name: commit and push
+        run: |
+          git config --global user.name 'GitHub Action'
+          git config --global user.email 'action@github.com'
+          git add stable/
+          if git diff --staged --quiet; then
+            echo "no changes."
+          else
+            git commit -m "update stable: $(date -u)"
+            git push
+          fi
