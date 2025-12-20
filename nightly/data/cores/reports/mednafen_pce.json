@@ -1,0 +1,1 @@
+{ "core": "mednafen_pce", "buildStart": "2025-12-19T05:31:45+00:00", "buildEnd": "2025-12-19T05:37:31+00:00", "options": { "file": "Beetle PSX HW/Beetle PSX HW.opt", "settings": { "beetle_psx_hw_renderer": "software" } } }
