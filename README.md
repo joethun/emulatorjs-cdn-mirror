@@ -1,29 +1,26 @@
 <div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/Logo-light.png" width="275"/><br>
-  
-  #
-  
-  **https://github.com/EmulatorJS/EmulatorJS**
-  
+  <img src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/Logo-light.png" width="275"/>
+  <br><br>
+  <strong><a href="https://github.com/EmulatorJS/EmulatorJS">https://github.com/EmulatorJS/EmulatorJS</a></strong>
 </div>
 
-> [!NOTE]  
-> **This project was not created by me. See link above.**
+> [!NOTE]
+> This project was not created by me. See the link above for the original project.
 
-<div align="center">
-  
-  ## Example HTML:
-</div>
+## Configuration
 
-<div align="center">
-    This allows you to use it on hosting platforms with ease, such as Google Sites.
-</div><br>
+If you would like to switch between versions, set your path to data to the following:
 
+- **Nightly**: `https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/nightly/`
+- **Stable**: `https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/stable/`
+
+## Usage (Google Sites / Hosting)
+
+This allows you to use it on hosting platforms with ease, such as Google Sites.
 
 ```html
 <!doctype html>
 <html>
-
 <body>
     <script>
         ejs();
@@ -49,7 +46,5 @@
         }
     </script>
 </body>
-
 </html>
-
 ```
