@@ -7,7 +7,7 @@
 > [!NOTE]
 > This project was not created by me. See the link above for the original project.
 
-## Configuration
+## Usage
 
 Depending on which version you would like to use, set your EJS_pathtodata to one of the following:
 
