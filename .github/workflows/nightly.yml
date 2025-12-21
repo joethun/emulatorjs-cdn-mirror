@@ -26,9 +26,10 @@ jobs:
           git config --global user.name 'GitHub Action'
           git config --global user.email 'action@github.com'
           git add nightly/
-          if git diff --staged --quiet; then
-            echo "no changes."
-          else
+          if ! git diff --staged --quiet; then
             git commit -m "update nightly: $(date -u)"
+            git push
+          elif [ "$(date +%d)" = "01" ]; then
+            git commit --allow-empty -m "keep repo active: $(date -u)"
             git push
           fi
