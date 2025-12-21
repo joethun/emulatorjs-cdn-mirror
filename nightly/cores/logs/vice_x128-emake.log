@@ -90,10 +90,10 @@ CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
-CC cheat_manager.c
 CC core_info.c
-CC core_backup.c
+CC cheat_manager.c
 CC core_option_manager.c
+CC core_backup.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
@@ -160,8 +160,8 @@ CC menu/cbs/menu_cbs_right.c
 CC menu/cbs/menu_cbs_deferred_push.c
 CC menu/cbs/menu_cbs_scan.c
 CC menu/cbs/menu_cbs_get_value.c
-CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_sublabel.c
+CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_title.c
 CC menu/menu_displaylist.c
 CC menu/menu_contentless_cores.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1608911 bytes (1572 KiB)
+Archive size: 1609782 bytes (1573 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -404,8 +404,8 @@ CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
-CC playlist.c
 CC libretro-common/features/features_cpu.c
+CC playlist.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
@@ -423,8 +423,8 @@ CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
-CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
+CC libretro-db/rmsgpack.c
 CC database_info.c
 CC tasks/task_database.c
 CC tasks/task_database_cue.c
@@ -533,8 +533,8 @@ CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
-CC network/netplay/netplay_room_parse.c
 CC tasks/task_decompress.c
+CC network/netplay/netplay_room_parse.c
 CC gfx/video_filters/2xsai.c
 CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
@@ -553,8 +553,8 @@ CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
-CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_3x.c
+CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_4x.c
 CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1609630 bytes (1572 KiB)
+Archive size: 1608875 bytes (1572 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -714,8 +714,8 @@ CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
-CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_getopt.c
+CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1679763 bytes (1641 KiB)
+Archive size: 1680209 bytes (1641 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1679361 bytes (1641 KiB)
+Archive size: 1679037 bytes (1640 KiB)
 Everything is Ok

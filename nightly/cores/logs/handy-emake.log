@@ -181,8 +181,8 @@ CC libretro-common/formats/logiqx_dat/logiqx_dat.c
 CC deps/yxml/yxml.c
 CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/common/gl_common.c
-CC libretro-common/gfx/gl_capabilities.c
 CC gfx/drivers/gl2.c
+CC libretro-common/gfx/gl_capabilities.c
 CC libretro-common/glsym/rglgen.c
 CC gfx/drivers_context/emscriptenwebgl_ctx.c
 CC libretro-common/glsym/glsym_es3.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 882008 bytes (862 KiB)
+Archive size: 881399 bytes (861 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -407,9 +407,9 @@ CC libretro-common/utils/md5.c
 CC playlist.c
 CC libretro-common/features/features_cpu.c
 CC verbosity.c
-CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
+CC libretro-common/playlists/label_sanitization.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
@@ -438,8 +438,8 @@ CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
-CC menu/drivers/xmb.c
 CC menu/drivers/materialui.c
+CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 881602 bytes (861 KiB)
+Archive size: 880991 bytes (861 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 942280 bytes (921 KiB)
+Archive size: 942204 bytes (921 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -924,8 +924,8 @@ CC tasks/task_patch.c
 CC save.c
 CC tasks/task_save.c
 CC tasks/task_movie.c
-CC tasks/task_file_transfer.c
 CC tasks/task_image.c
+CC tasks/task_file_transfer.c
 CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
@@ -1010,8 +1010,8 @@ CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
-CC libretro-common/compat/compat_getopt.c
 CC audio/drivers_resampler/cc_resampler.c
+CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
@@ -1024,8 +1024,8 @@ CC database_info.c
 CC tasks/task_database.c
 CC tasks/task_database_cue.c
 CC menu/menu_explore.c
-CC input/drivers/emulatorjs_input.c
 CC tasks/task_menu_explore.c
+CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 941041 bytes (919 KiB)
+Archive size: 941035 bytes (919 KiB)
 Everything is Ok

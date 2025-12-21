@@ -29,8 +29,8 @@ CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
-CC libretro-common/queues/task_queue.c
 CC tasks/task_content.c
+CC libretro-common/queues/task_queue.c
 CC tasks/task_patch.c
 CC save.c
 CC tasks/task_save.c
@@ -86,8 +86,8 @@ CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
-CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
+CC input/input_keymaps.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
@@ -199,9 +199,9 @@ CC deps/7zip/7zCrcOpt.c
 CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
 CC deps/7zip/Delta.c
+CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
-CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaEnc.c
 CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1070933 bytes (1046 KiB)
+Archive size: 1071421 bytes (1047 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1070959 bytes (1046 KiB)
+Archive size: 1070299 bytes (1046 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1133323 bytes (1107 KiB)
+Archive size: 1133011 bytes (1107 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1022,8 +1022,8 @@ CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
 CC database_info.c
 CC tasks/task_database.c
-CC menu/menu_explore.c
 CC tasks/task_database_cue.c
+CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
@@ -1157,8 +1157,8 @@ CC gfx/video_filters/dot_matrix_4x.c
 CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
-CC gfx/video_filters/upscale_240x160_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
+CC gfx/video_filters/upscale_240x160_320x240.c
 CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1132942 bytes (1107 KiB)
+Archive size: 1132892 bytes (1107 KiB)
 Everything is Ok

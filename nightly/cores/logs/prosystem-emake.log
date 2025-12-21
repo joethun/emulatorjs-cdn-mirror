@@ -247,8 +247,8 @@ CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
 CC gfx/video_filters/darken.c
 CC gfx/video_filters/epx.c
-CC gfx/video_filters/blargg_ntsc_snes.c
 CC gfx/video_filters/scale2x.c
+CC gfx/video_filters/blargg_ntsc_snes.c
 CC gfx/video_filters/lq2x.c
 CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 865903 bytes (846 KiB)
+Archive size: 865992 bytes (846 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -392,8 +392,8 @@ CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
 CC disk_index_file.c
-CC tasks/task_powerstate.c
 CC tasks/task_screenshot.c
+CC tasks/task_powerstate.c
 CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
@@ -438,8 +438,8 @@ CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
-CC menu/drivers/materialui.c
 CC menu/drivers/xmb.c
+CC menu/drivers/materialui.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 865818 bytes (846 KiB)
+Archive size: 865889 bytes (846 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -620,8 +620,8 @@ CC record/record_driver.c
 CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
-CC libretro-common/queues/task_queue.c
 CC intl/msg_hash_us.c
+CC libretro-common/queues/task_queue.c
 CC tasks/task_content.c
 CC tasks/task_patch.c
 CC save.c
@@ -719,8 +719,8 @@ CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
-CC libretro-db/query.c
 CC libretro-db/libretrodb.c
+CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
 CC database_info.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 925592 bytes (904 KiB)
+Archive size: 925544 bytes (904 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -951,8 +951,8 @@ CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
-CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
+CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
@@ -1008,8 +1008,8 @@ CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
-CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
+CC libretro-common/audio/audio_mixer.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
@@ -1105,8 +1105,8 @@ CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
-CC libretro-common/formats/libchdr/libchdr_cdrom.c
 CC libretro-common/formats/libchdr/libchdr_bitstream.c
+CC libretro-common/formats/libchdr/libchdr_cdrom.c
 CC libretro-common/formats/libchdr/libchdr_chd.c
 CC libretro-common/formats/libchdr/libchdr_huffman.c
 CC libretro-common/streams/chd_stream.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 924484 bytes (903 KiB)
+Archive size: 924041 bytes (903 KiB)
 Everything is Ok

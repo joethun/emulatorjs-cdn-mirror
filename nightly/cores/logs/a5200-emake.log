@@ -78,8 +78,8 @@ CC configuration.c
 CC libretro-common/dynamic/dylib.c
 CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
-CC gfx/gfx_thumbnail.c
 CC gfx/gfx_thumbnail_path.c
+CC gfx/gfx_thumbnail.c
 CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
@@ -164,8 +164,8 @@ CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_sublabel.c
 CC menu/cbs/menu_cbs_title.c
 CC menu/menu_displaylist.c
-CC gfx/gfx_widgets.c
 CC menu/menu_contentless_cores.c
+CC gfx/gfx_widgets.c
 CC gfx/widgets/gfx_widget_screenshot.c
 CC gfx/widgets/gfx_widget_volume.c
 CC gfx/widgets/gfx_widget_generic_message.c
@@ -255,8 +255,8 @@ CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
-CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
+CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 894239 bytes (874 KiB)
+Archive size: 894180 bytes (874 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 893947 bytes (873 KiB)
+Archive size: 893980 bytes (874 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 953711 bytes (932 KiB)
+Archive size: 953622 bytes (932 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -929,8 +929,8 @@ CC tasks/task_image.c
 CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
-CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_utf.c
+CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
@@ -938,8 +938,8 @@ CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
-CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
+CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
@@ -961,8 +961,8 @@ CC input/input_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
 CC gfx/video_driver.c
-CC gfx/gfx_animation.c
 CC gfx/gfx_display.c
+CC gfx/gfx_animation.c
 CC configuration.c
 CC libretro-common/dynamic/dylib.c
 CC cores/dynamic_dummy.c
@@ -995,8 +995,8 @@ CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
-CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
+CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
@@ -1151,8 +1151,8 @@ CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
-CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/gameboy4x.c
+CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/dot_matrix_4x.c
 CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 952997 bytes (931 KiB)
+Archive size: 953416 bytes (932 KiB)
 Everything is Ok

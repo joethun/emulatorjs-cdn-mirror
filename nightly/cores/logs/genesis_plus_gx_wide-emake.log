@@ -79,8 +79,8 @@ CC libretro-common/dynamic/dylib.c
 CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
 CC gfx/gfx_thumbnail_path.c
-CC state_manager.c
 CC gfx/gfx_thumbnail.c
+CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
@@ -287,7 +287,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1215417 bytes (1187 KiB)
+Archive size: 1215418 bytes (1187 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -305,8 +305,8 @@ HAVE_CHD: 0
 HAVE_7ZIP: 1
 BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=0 HAVE_THREADS=0 PTHREAD_POOL_SIZE=0 ASYNC=1 HAVE_OPENGLES3=0 STACK_SIZE=4194304 INITIAL_HEAP=536870912 TARGET=genesis_plus_gx_wide_libretro.js -j8
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
-CC frontend/frontend_driver.c
 CC version_git.c
+CC frontend/frontend_driver.c
 CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
@@ -353,8 +353,8 @@ CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
-CC audio/audio_driver.c
 CC libretro-common/hash/lrc_hash.c
+CC audio/audio_driver.c
 CC input/input_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
@@ -500,8 +500,8 @@ CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
-CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/png/rpng_encode.c
+CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
@@ -574,7 +574,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1210601 bytes (1183 KiB)
+Archive size: 1216232 bytes (1188 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -787,15 +787,15 @@ CC deps/7zip/LzmaEnc.c
 CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
-CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
+CC deps/7zip/Bcj2.c
 CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
-CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/png/rpng_encode.c
+CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
@@ -1054,8 +1054,8 @@ CC deps/7zip/7zCrc.c
 CC deps/7zip/7zCrcOpt.c
 CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
-CC deps/7zip/Delta.c
 CC deps/7zip/LzFind.c
+CC deps/7zip/Delta.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaEnc.c
@@ -1063,8 +1063,8 @@ CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
-CC deps/7zip/7zStream.c
 CC deps/7zip/7zFile.c
+CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c

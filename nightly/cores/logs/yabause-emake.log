@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1008857 bytes (986 KiB)
+Archive size: 1008681 bytes (986 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -502,8 +502,8 @@ CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
-CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
+CC deps/7zip/7zStream.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
@@ -523,8 +523,8 @@ CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
 CC libretro-common/net/net_http_parse.c
-CC libretro-common/net/net_socket.c
 CC core_updater_list.c
+CC libretro-common/net/net_socket.c
 CC network/natt.c
 CC tasks/task_netplay_lan_scan.c
 CC tasks/task_netplay_nat_traversal.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1009552 bytes (986 KiB)
+Archive size: 1009324 bytes (986 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -635,8 +635,8 @@ CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
-CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
+CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
@@ -668,8 +668,8 @@ CC gfx/gfx_display.c
 CC gfx/gfx_animation.c
 CC configuration.c
 CC libretro-common/dynamic/dylib.c
-CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
+CC cores/dynamic_dummy.c
 CC gfx/gfx_thumbnail_path.c
 CC gfx/gfx_thumbnail.c
 CC state_manager.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1072277 bytes (1048 KiB)
+Archive size: 1072225 bytes (1048 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1071244 bytes (1047 KiB)
+Archive size: 1071282 bytes (1047 KiB)
 Everything is Ok

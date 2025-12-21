@@ -106,8 +106,8 @@ CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
-CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
+CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
@@ -164,8 +164,8 @@ CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_sublabel.c
 CC menu/cbs/menu_cbs_title.c
 CC menu/menu_displaylist.c
-CC menu/menu_contentless_cores.c
 CC gfx/gfx_widgets.c
+CC menu/menu_contentless_cores.c
 CC gfx/widgets/gfx_widget_screenshot.c
 CC gfx/widgets/gfx_widget_volume.c
 CC gfx/widgets/gfx_widget_generic_message.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 891907 bytes (872 KiB)
+Archive size: 892223 bytes (872 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 891831 bytes (871 KiB)
+Archive size: 891833 bytes (871 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -612,8 +612,8 @@ BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=1 HAVE_TH
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 CC version_git.c
 CC frontend/frontend_driver.c
-CC retroarch.c
 CC runloop.c
+CC retroarch.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
 CC record/record_driver.c
@@ -712,8 +712,8 @@ CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
-CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
+CC input/bsv/bsvmovie.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
@@ -724,8 +724,8 @@ CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
 CC database_info.c
-CC tasks/task_database.c
 CC tasks/task_database_cue.c
+CC tasks/task_database.c
 CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 952624 bytes (931 KiB)
+Archive size: 952598 bytes (931 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -974,8 +974,8 @@ CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
-CC input/input_autodetect_builtin.c
 CC input/input_keymaps.c
+CC input/input_autodetect_builtin.c
 CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
@@ -1021,8 +1021,8 @@ CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
 CC database_info.c
-CC tasks/task_database.c
 CC tasks/task_database_cue.c
+CC tasks/task_database.c
 CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
@@ -1078,8 +1078,8 @@ CC libretro-common/gfx/gl_capabilities.c
 CC libretro-common/glsym/rglgen.c
 CC gfx/drivers_context/emscriptenwebgl_ctx.c
 CC libretro-common/glsym/glsym_es2.c
-CC gfx/video_shader_parse.c
 CC gfx/drivers_shader/shader_glsl.c
+CC gfx/video_shader_parse.c
 CC libretro-common/file/archive_file.c
 CC libretro-common/streams/trans_stream.c
 CC libretro-common/streams/trans_stream_pipe.c
@@ -1095,8 +1095,8 @@ CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaEnc.c
-CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
+CC deps/7zip/Bra.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 951719 bytes (930 KiB)
+Archive size: 951685 bytes (930 KiB)
 Everything is Ok

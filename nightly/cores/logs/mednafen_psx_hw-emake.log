@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1224626 bytes (1196 KiB)
+Archive size: 1225115 bytes (1197 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1224585 bytes (1196 KiB)
+Archive size: 1224995 bytes (1197 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -636,8 +636,8 @@ CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
-CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
+CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1295305 bytes (1265 KiB)
+Archive size: 1294860 bytes (1265 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -911,10 +911,10 @@ CC version_git.c
 CC frontend/frontend_driver.c
 CC retroarch.c
 CC runloop.c
-CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
-CC record/record_driver.c
+CC ui/ui_companion_driver.c
 CC record/drivers/record_wav.c
+CC record/record_driver.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
@@ -1027,8 +1027,8 @@ CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
-CC libretro-common/audio/conversion/s16_to_float.c
 CC audio/drivers/openal.c
+CC libretro-common/audio/conversion/s16_to_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
@@ -1088,8 +1088,8 @@ CC deps/7zip/7zArcIn.c
 CC deps/7zip/7zBuf.c
 CC deps/7zip/7zCrc.c
 CC deps/7zip/7zCrcOpt.c
-CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
+CC deps/7zip/7zDec.c
 CC deps/7zip/Delta.c
 CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
@@ -1118,8 +1118,8 @@ CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
 CC libretro-common/formats/m3u/m3u_file.c
-CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
+CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http_parse.c
 CC libretro-common/net/net_socket.c
 CC core_updater_list.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1293863 bytes (1264 KiB)
+Archive size: 1294710 bytes (1265 KiB)
 Everything is Ok

@@ -73,8 +73,8 @@ CC input/common/input_hid_common.c
 CC led/led_driver.c
 CC gfx/video_driver.c
 CC gfx/gfx_display.c
-CC gfx/gfx_animation.c
 CC configuration.c
+CC gfx/gfx_animation.c
 CC libretro-common/dynamic/dylib.c
 CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1225400 bytes (1197 KiB)
+Archive size: 1225422 bytes (1197 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -316,9 +316,9 @@ CC version_git.c
 CC frontend/frontend_driver.c
 CC retroarch.c
 CC runloop.c
-CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
 CC record/record_driver.c
+CC ui/ui_companion_driver.c
 CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
@@ -466,8 +466,8 @@ CC gfx/widgets/gfx_widget_generic_message.c
 CC gfx/widgets/gfx_widget_libretro_message.c
 CC gfx/widgets/gfx_widget_progress_message.c
 CC gfx/widgets/gfx_widget_load_content_animation.c
-CC led/drivers/led_overlay.c
 CC tasks/task_overlay.c
+CC led/drivers/led_overlay.c
 CC gfx/drivers_font_renderer/stb.c
 CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/formats/xml/rxml.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1226330 bytes (1198 KiB)
+Archive size: 1226334 bytes (1198 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1286167 bytes (1257 KiB)
+Archive size: 1286164 bytes (1257 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -910,8 +910,8 @@ make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/Retr
 CC version_git.c
 CC frontend/frontend_driver.c
 CC retroarch.c
-CC ui/ui_companion_driver.c
 CC runloop.c
+CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
 CC record/record_driver.c
 CC record/drivers/record_wav.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1285036 bytes (1255 KiB)
+Archive size: 1285111 bytes (1255 KiB)
 Everything is Ok

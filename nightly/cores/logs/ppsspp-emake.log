@@ -100,8 +100,8 @@ CC runtime_file.c
 CC disk_index_file.c
 CC tasks/task_screenshot.c
 CC tasks/task_powerstate.c
-CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler.c
+CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
@@ -289,7 +289,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 21809569 bytes (21 MiB)
+2 files, 21809568 bytes (21 MiB)
 
 Creating archive: ../../EmulatorJS/data/cores/ppsspp-thread-wasm.data
 
@@ -297,5 +297,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 4526758 bytes (4421 KiB)
+Archive size: 4527145 bytes (4422 KiB)
 Everything is Ok

@@ -48,8 +48,8 @@ CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
-CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
+CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
@@ -126,8 +126,8 @@ CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
-CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
+CC libretro-db/bintree.c
 CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1007078 bytes (984 KiB)
+Archive size: 1008042 bytes (985 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1008165 bytes (985 KiB)
+Archive size: 1007500 bytes (984 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -610,8 +610,8 @@ rm -f retroarch.js
 make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=1 HAVE_THREADS=1 PTHREAD_POOL_SIZE=4 ASYNC=1 HAVE_OPENGLES3=1 STACK_SIZE=4194304 INITIAL_HEAP=134217728 TARGET=mednafen_pce_libretro.js -j8
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
-CC frontend/frontend_driver.c
 CC version_git.c
+CC frontend/frontend_driver.c
 CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
@@ -640,8 +640,8 @@ CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
-CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/stdin_stream.c
+CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
@@ -801,8 +801,8 @@ CC deps/7zip/LzmaEnc.c
 CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
-CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
+CC deps/7zip/Bcj2.c
 CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
@@ -844,8 +844,8 @@ CC gfx/video_filters/darken.c
 CC gfx/video_filters/epx.c
 CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/blargg_ntsc_snes.c
-CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/lq2x.c
+CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1072623 bytes (1048 KiB)
+Archive size: 1073254 bytes (1049 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -934,16 +934,16 @@ CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
-CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
+CC libretro-common/lists/file_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
-CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
+CC libretro-common/streams/network_stream.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
@@ -964,8 +964,8 @@ CC gfx/video_driver.c
 CC gfx/gfx_display.c
 CC gfx/gfx_animation.c
 CC configuration.c
-CC cores/dynamic_dummy.c
 CC libretro-common/dynamic/dylib.c
+CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
 CC gfx/gfx_thumbnail_path.c
 CC gfx/gfx_thumbnail.c
@@ -975,8 +975,8 @@ CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
-CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
+CC input/input_keymaps.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1072203 bytes (1048 KiB)
+Archive size: 1071548 bytes (1047 KiB)
 Everything is Ok

@@ -111,8 +111,8 @@ CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
-CC libretro-common/features/features_cpu.c
 CC verbosity.c
+CC libretro-common/features/features_cpu.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
@@ -287,7 +287,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 5045398 bytes (4928 KiB)
+Archive size: 5044139 bytes (4926 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -311,8 +311,8 @@ CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
-CC record/drivers/record_wav.c
 CC record/record_driver.c
+CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
@@ -344,8 +344,8 @@ CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
-CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/memmap/memalign.c
+CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
@@ -400,8 +400,8 @@ CC libretro-common/utils/md5.c
 CC playlist.c
 CC libretro-common/features/features_cpu.c
 CC verbosity.c
-CC libretro-common/time/rtime.c
 CC libretro-common/playlists/label_sanitization.c
+CC libretro-common/time/rtime.c
 CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
@@ -534,8 +534,8 @@ CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
-CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/normal4x.c
+CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
@@ -546,9 +546,9 @@ CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
+CC gfx/video_filters/upscale_240x160_320x240.c
 CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
-CC gfx/video_filters/upscale_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
@@ -574,7 +574,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 5044979 bytes (4927 KiB)
+Archive size: 5044277 bytes (4927 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -816,8 +816,8 @@ CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
 CC tasks/task_decompress.c
 CC gfx/video_filters/2xsai.c
-CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/super2xsai.c
+CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
 CC gfx/video_filters/darken.c
 CC gfx/video_filters/epx.c
@@ -835,8 +835,8 @@ CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_3x.c
-CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/dot_matrix_4x.c
+CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
@@ -868,7 +868,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 4969926 bytes (4854 KiB)
+Archive size: 4972693 bytes (4857 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1158,5 +1158,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 4970024 bytes (4854 KiB)
+Archive size: 4970954 bytes (4855 KiB)
 Everything is Ok

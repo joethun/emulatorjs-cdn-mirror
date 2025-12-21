@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 898839 bytes (878 KiB)
+Archive size: 899399 bytes (879 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -527,8 +527,8 @@ CC libretro-common/net/net_socket.c
 CC core_updater_list.c
 CC network/natt.c
 CC tasks/task_netplay_lan_scan.c
-CC tasks/task_netplay_nat_traversal.c
 CC tasks/task_netplay_find_content.c
+CC tasks/task_netplay_nat_traversal.c
 CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 898990 bytes (878 KiB)
+Archive size: 898955 bytes (878 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -845,8 +845,8 @@ CC gfx/video_filters/epx.c
 CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/blargg_ntsc_snes.c
 CC gfx/video_filters/lq2x.c
-CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
+CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 960436 bytes (938 KiB)
+Archive size: 960445 bytes (938 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1026,8 +1026,8 @@ CC tasks/task_database_cue.c
 CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
-CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
+CC frontend/drivers/platform_emulatorjs.c
 CC libretro-common/audio/conversion/s16_to_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 959640 bytes (938 KiB)
+Archive size: 959949 bytes (938 KiB)
 Everything is Ok

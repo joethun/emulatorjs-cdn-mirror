@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 873946 bytes (854 KiB)
+Archive size: 874538 bytes (855 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -322,8 +322,8 @@ CC record/record_driver.c
 CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
-CC intl/msg_hash_us.c
 CC libretro-common/queues/task_queue.c
+CC intl/msg_hash_us.c
 CC tasks/task_content.c
 CC tasks/task_patch.c
 CC save.c
@@ -340,8 +340,8 @@ CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
-CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
+CC libretro-common/lists/dir_list.c
 CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
@@ -473,8 +473,8 @@ CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/formats/xml/rxml.c
 CC libretro-common/formats/logiqx_dat/logiqx_dat.c
 CC deps/yxml/yxml.c
-CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/common/gl_common.c
+CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/drivers/gl2.c
 CC libretro-common/gfx/gl_capabilities.c
 CC libretro-common/glsym/rglgen.c
@@ -566,8 +566,8 @@ CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
-CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/panning.c
+CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/phaser.c
 CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 874625 bytes (855 KiB)
+Archive size: 874609 bytes (855 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -709,8 +709,8 @@ CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
 CC disk_control_interface.c
-CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
+CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
@@ -732,8 +732,8 @@ CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
-CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
+CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
@@ -834,8 +834,8 @@ CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
-CC network/netplay/netplay_room_parse.c
 CC tasks/task_decompress.c
+CC network/netplay/netplay_room_parse.c
 CC gfx/video_filters/2xsai.c
 CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 933663 bytes (912 KiB)
+Archive size: 933575 bytes (912 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -953,11 +953,11 @@ CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
-CC libretro-common/file/file_path_io.c
 CC file_path_special.c
+CC libretro-common/file/file_path_io.c
+CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
 CC input/input_driver.c
-CC libretro-common/hash/lrc_hash.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
 CC gfx/video_driver.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 932689 bytes (911 KiB)
+Archive size: 933229 bytes (912 KiB)
 Everything is Ok

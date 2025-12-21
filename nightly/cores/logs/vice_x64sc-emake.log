@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1537235 bytes (1502 KiB)
+Archive size: 1536660 bytes (1501 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -351,8 +351,8 @@ CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
-CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/memmap/memalign.c
+CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1537432 bytes (1502 KiB)
+Archive size: 1537751 bytes (1502 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -647,8 +647,8 @@ CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
-CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
+CC libretro-common/lists/string_list.c
 CC libretro-common/memmap/memalign.c
 CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
@@ -657,8 +657,8 @@ CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
-CC libretro-common/hash/lrc_hash.c
 CC file_path_special.c
+CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
 CC input/input_driver.c
 CC input/common/input_hid_common.c
@@ -712,8 +712,8 @@ CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
-CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
+CC input/bsv/bsvmovie.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1607330 bytes (1570 KiB)
+Archive size: 1607156 bytes (1570 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -979,8 +979,8 @@ CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
-CC core_info.c
 CC cheat_manager.c
+CC core_info.c
 CC core_backup.c
 CC core_option_manager.c
 CC libretro-common/file/config_file.c
@@ -1178,7 +1178,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 7718370 bytes (7538 KiB)
+2 files, 7718369 bytes (7538 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_x64sc-thread-legacy-wasm.data
 
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1606503 bytes (1569 KiB)
+Archive size: 1606580 bytes (1569 KiB)
 Everything is Ok

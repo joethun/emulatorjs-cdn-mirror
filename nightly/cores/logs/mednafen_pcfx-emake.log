@@ -58,8 +58,8 @@ CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
-CC libretro-common/lists/linked_list.c
 CC libretro-common/file/nbio/nbio_stdio.c
+CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 965863 bytes (944 KiB)
+Archive size: 965921 bytes (944 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -418,8 +418,8 @@ CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
-CC libretro-common/formats/image_texture.c
 CC libretro-common/compat/compat_strl.c
+CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
@@ -524,8 +524,8 @@ CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
 CC libretro-common/net/net_http_parse.c
 CC libretro-common/net/net_socket.c
-CC core_updater_list.c
 CC network/natt.c
+CC core_updater_list.c
 CC tasks/task_netplay_lan_scan.c
 CC tasks/task_netplay_nat_traversal.c
 CC tasks/task_netplay_find_content.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 964814 bytes (943 KiB)
+Archive size: 965748 bytes (944 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -701,8 +701,8 @@ CC gfx/video_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
-CC playlist.c
 CC libretro-common/utils/md5.c
+CC playlist.c
 CC libretro-common/features/features_cpu.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1029308 bytes (1006 KiB)
+Archive size: 1029209 bytes (1006 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -974,12 +974,12 @@ CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
-CC input/input_keymaps.c
 CC input/input_autodetect_builtin.c
+CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
-CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
+CC libretro-common/compat/compat_posix_string.c
 CC core_info.c
 CC core_backup.c
 CC core_option_manager.c
@@ -1011,8 +1011,8 @@ CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
-CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
+CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
@@ -1102,11 +1102,11 @@ CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
 CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
+CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
 CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
-CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/formats/libchdr/libchdr_chd.c
 CC libretro-common/formats/libchdr/libchdr_huffman.c
 CC libretro-common/streams/chd_stream.c
@@ -1117,9 +1117,9 @@ CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
+CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
-CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_http_parse.c
 CC libretro-common/net/net_socket.c
 CC core_updater_list.c
@@ -1144,8 +1144,8 @@ CC gfx/video_filters/blargg_ntsc_snes.c
 CC gfx/video_filters/lq2x.c
 CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
-CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal2x_width.c
+CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
 CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
@@ -1169,8 +1169,8 @@ CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
 CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
-CC libretro-common/audio/dsp_filters/vibrato.c
 CC libretro-common/audio/dsp_filters/wahwah.c
+CC libretro-common/audio/dsp_filters/vibrato.c
 LD mednafen_pcfx_libretro.js <obj> libretro_emscripten.a -s USE_ZLIB=1 -lm -L. --no-heap-copy -s USE_ZLIB=1 -s STACK_SIZE=4194304 -s INITIAL_MEMORY=134217728 -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS=Browser,callMain,cwrap,getValue,HEAPU8,FS,PATH,ERRNO_CODES,AL,abort,ENV,stringToNewUTF8,UTF8ToString,Browser,EmscriptenSendCommand,EmscriptenReceiveCommandReply,EmulatorJSGetState -s ALLOW_MEMORY_GROWTH=1 -s EXPORTED_FUNCTIONS=_main,_malloc,_free,_load_state, _ejs_set_variable,_simulate_input,_shader_enable,_save_state_info,_set_cheat,_cmd_take_screenshot, _system_restart,_cmd_savefiles,_get_core_options,_cmd_save_state,_supports_states,_reset_cheat,_toggleMainLoop, _save_file_path,_get_disk_count,_set_current_disk,_get_current_disk,_refresh_save_files,_toggle_fastforward,_set_ff_ratio, _toggle_slow_motion,_set_sm_ratio,_toggle_rewind,_set_rewind_granularity,_get_current_frame_count,_ejs_set_keyboard_enabled, _set_vsync,_set_video_rotation,_get_video_dimensions,EmscriptenSendCommand,EmscriptenReceiveCommandReply -s ERROR_ON_UNDEFINED_SYMBOLS=0 -lidbfs.js -s MODULARIZE=1 -s EXPORT_NAME=EJS_Runtime -s ENVIRONMENT=web,worker -s WASM_BIGINT=1 --extern-pre-js emscripten/pre.js --js-library emscripten/library_rwebcam.js --js-library emscripten/library_platform_emscripten.js --js-library emscripten/emulatorjs.js -s FULL_ES2=1 -s MIN_WEBGL_VERSION=1 -s MAX_WEBGL_VERSION=2 -lopenal -lopenal -s MAXIMUM_MEMORY=4294967296 -pthread -s PTHREAD_POOL_SIZE=4 -s ASYNCIFY=1 -s ASYNCIFY_STACK_SIZE=8192 -O3
 make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1028089 bytes (1004 KiB)
+Archive size: 1027965 bytes (1004 KiB)
 Everything is Ok

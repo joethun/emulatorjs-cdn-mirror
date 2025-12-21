@@ -477,9 +477,9 @@ AR	libavformat/libavformat.a
 AR	libavcodec/libavcodec.a
 AR	libswresample/libswresample.a
 INSTALL	libavformat/libavformat.a
-AR	libavutil/libavutil.a
 INSTALL	libavcodec/libavcodec.a
 INSTALL	libswresample/libswresample.a
+AR	libavutil/libavutil.a
 INSTALL	libavutil/libavutil.a
 AR	libswscale/libswscale.a
 INSTALL	libswscale/libswscale.a

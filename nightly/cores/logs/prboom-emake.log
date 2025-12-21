@@ -103,8 +103,8 @@ CC tasks/task_powerstate.c
 CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
-CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
+CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/video_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1102186 bytes (1077 KiB)
+Archive size: 1102520 bytes (1077 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -356,8 +356,8 @@ CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
-CC libretro-common/file/file_path.c
 CC libretro-common/file/nbio/nbio_intf.c
+CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
@@ -421,8 +421,8 @@ CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
-CC libretro-db/query.c
 CC libretro-db/libretrodb.c
+CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
 CC database_info.c
@@ -554,8 +554,8 @@ CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
-CC gfx/video_filters/dot_matrix_4x.c
 CC gfx/video_filters/dot_matrix_3x.c
+CC gfx/video_filters/dot_matrix_4x.c
 CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1102848 bytes (1077 KiB)
+Archive size: 1103636 bytes (1078 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1159583 bytes (1133 KiB)
+Archive size: 1159650 bytes (1133 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -934,8 +934,8 @@ CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
-CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
+CC libretro-common/lists/file_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
@@ -1155,8 +1155,8 @@ CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/dot_matrix_4x.c
 CC gfx/video_filters/upscale_1_5x.c
-CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
+CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/picoscale_256x_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
 CC gfx/video_filters/upscale_mix_240x160_320x240.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1158264 bytes (1132 KiB)
+Archive size: 1159018 bytes (1132 KiB)
 Everything is Ok

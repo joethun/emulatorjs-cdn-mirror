@@ -18,8 +18,8 @@ rm -f retroarch.js
 make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=1 HAVE_THREADS=0 PTHREAD_POOL_SIZE=0 ASYNC=1 HAVE_OPENGLES3=1 STACK_SIZE=4194304 INITIAL_HEAP=134217728 TARGET=vice_xpet_libretro.js -j8
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
-CC version_git.c
 CC frontend/frontend_driver.c
+CC version_git.c
 CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
@@ -44,8 +44,8 @@ CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
-CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
+CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
@@ -112,15 +112,15 @@ CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
 CC libretro-common/features/features_cpu.c
-CC libretro-common/playlists/label_sanitization.c
 CC verbosity.c
+CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
-CC input/bsv/bsvmovie.c
 CC libretro-common/audio/audio_mixer.c
+CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
@@ -130,8 +130,8 @@ CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
-CC database_info.c
 CC libretro-db/rmsgpack_dom.c
+CC database_info.c
 CC tasks/task_database.c
 CC tasks/task_database_cue.c
 CC menu/menu_explore.c
@@ -202,9 +202,9 @@ CC deps/7zip/Delta.c
 CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
-CC deps/7zip/LzmaEnc.c
 CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
+CC deps/7zip/LzmaEnc.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
@@ -266,8 +266,8 @@ CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
-CC gfx/video_filters/upscale_240x160_320x240.c
 CC gfx/video_filters/upscale_mix_240x160_320x240.c
+CC gfx/video_filters/upscale_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
@@ -286,7 +286,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6277930 bytes (6131 KiB)
+2 files, 6277933 bytes (6131 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xpet-wasm.data
 
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1381737 bytes (1350 KiB)
+Archive size: 1381822 bytes (1350 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -580,7 +580,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6279868 bytes (6133 KiB)
+2 files, 6279867 bytes (6133 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xpet-legacy-wasm.data
 
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1381679 bytes (1350 KiB)
+Archive size: 1381452 bytes (1350 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -611,8 +611,8 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=1 HAVE_THREADS=1 PTHREAD_POOL_SIZE=4 ASYNC=1 HAVE_OPENGLES3=1 STACK_SIZE=4194304 INITIAL_HEAP=134217728 TARGET=vice_xpet_libretro.js -j8
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 CC version_git.c
-CC retroarch.c
 CC frontend/frontend_driver.c
+CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
@@ -648,8 +648,8 @@ CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
-CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
+CC libretro-common/string/stdstring.c
 CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
@@ -854,8 +854,8 @@ CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
-CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/gameboy4x.c
+CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/dot_matrix_4x.c
 CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1449614 bytes (1416 KiB)
+Archive size: 1449329 bytes (1416 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1448942 bytes (1415 KiB)
+Archive size: 1448879 bytes (1415 KiB)
 Everything is Ok

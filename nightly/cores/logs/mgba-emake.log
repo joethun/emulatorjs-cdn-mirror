@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1072369 bytes (1048 KiB)
+Archive size: 1072815 bytes (1048 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -413,13 +413,13 @@ CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
-CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
+CC libretro-common/audio/audio_mixer.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
-CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
+CC libretro-common/compat/compat_strl.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1071863 bytes (1047 KiB)
+Archive size: 1071892 bytes (1047 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1133066 bytes (1107 KiB)
+Archive size: 1133651 bytes (1108 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -941,8 +941,8 @@ CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
-CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
+CC libretro-common/streams/memory_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1133169 bytes (1107 KiB)
+Archive size: 1133220 bytes (1107 KiB)
 Everything is Ok

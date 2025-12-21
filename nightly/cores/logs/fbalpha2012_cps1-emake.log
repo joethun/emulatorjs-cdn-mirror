@@ -102,8 +102,8 @@ CC tasks/task_screenshot.c
 CC tasks/task_powerstate.c
 CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/pixconv.c
-CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
+CC libretro-common/gfx/scaler/scaler_int.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1050330 bytes (1026 KiB)
+Archive size: 1050084 bytes (1026 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1050212 bytes (1026 KiB)
+Archive size: 1050051 bytes (1026 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -692,8 +692,8 @@ CC runtime_file.c
 CC disk_index_file.c
 CC tasks/task_screenshot.c
 CC tasks/task_powerstate.c
-CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/pixconv.c
+CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
@@ -738,9 +738,9 @@ CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
 CC menu/drivers/xmb.c
-CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
+CC menu/drivers/ozone.c
 CC menu/menu_driver.c
 CC menu/cbs/menu_cbs_ok.c
 CC menu/cbs/menu_cbs_cancel.c
@@ -769,8 +769,8 @@ CC led/drivers/led_overlay.c
 CC gfx/drivers_font_renderer/stb.c
 CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/rthreads/rthreads.c
-CC gfx/video_thread_wrapper.c
 CC audio/audio_thread_wrapper.c
+CC gfx/video_thread_wrapper.c
 CC libretro-common/formats/xml/rxml.c
 CC libretro-common/formats/logiqx_dat/logiqx_dat.c
 CC deps/yxml/yxml.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1121261 bytes (1095 KiB)
+Archive size: 1121211 bytes (1095 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -953,10 +953,10 @@ CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
-CC file_path_special.c
 CC libretro-common/file/file_path_io.c
-CC libretro-common/hash/lrc_hash.c
+CC file_path_special.c
 CC audio/audio_driver.c
+CC libretro-common/hash/lrc_hash.c
 CC input/input_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
@@ -969,8 +969,8 @@ CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
 CC gfx/gfx_thumbnail_path.c
 CC gfx/gfx_thumbnail.c
-CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont.c
+CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
@@ -982,8 +982,8 @@ CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
 CC core_info.c
 CC core_backup.c
-CC libretro-common/file/config_file.c
 CC core_option_manager.c
+CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
 CC disk_index_file.c
@@ -1013,8 +1013,8 @@ CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
-CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
+CC libretro-common/compat/compat_strl.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
@@ -1053,8 +1053,8 @@ CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_sublabel.c
 CC menu/cbs/menu_cbs_title.c
 CC menu/menu_displaylist.c
-CC menu/menu_contentless_cores.c
 CC gfx/gfx_widgets.c
+CC menu/menu_contentless_cores.c
 CC gfx/widgets/gfx_widget_screenshot.c
 CC gfx/widgets/gfx_widget_volume.c
 CC gfx/widgets/gfx_widget_generic_message.c
@@ -1084,8 +1084,8 @@ CC libretro-common/file/archive_file.c
 CC libretro-common/streams/trans_stream.c
 CC libretro-common/streams/trans_stream_pipe.c
 CC libretro-common/file/archive_file_7z.c
-CC deps/7zip/7zArcIn.c
 CC deps/7zip/7zBuf.c
+CC deps/7zip/7zArcIn.c
 CC deps/7zip/7zCrc.c
 CC deps/7zip/7zCrcOpt.c
 CC deps/7zip/7zDec.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1120306 bytes (1095 KiB)
+Archive size: 1120382 bytes (1095 KiB)
 Everything is Ok

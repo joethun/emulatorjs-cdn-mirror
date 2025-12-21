@@ -24,8 +24,8 @@ CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
-CC record/record_driver.c
 CC record/drivers/record_wav.c
+CC record/record_driver.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
@@ -115,8 +115,8 @@ CC libretro-common/features/features_cpu.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
-CC manual_content_scan.c
 CC disk_control_interface.c
+CC manual_content_scan.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 992414 bytes (970 KiB)
+Archive size: 992545 bytes (970 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -418,8 +418,8 @@ CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
-CC libretro-common/formats/image_texture.c
 CC libretro-common/compat/compat_strl.c
+CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 991806 bytes (969 KiB)
+Archive size: 991798 bytes (969 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1052042 bytes (1028 KiB)
+Archive size: 1052235 bytes (1028 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1102,8 +1102,8 @@ CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
 CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
-CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
+CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/rzip_stream.c
 CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
@@ -1112,8 +1112,8 @@ CC libretro-common/formats/libchdr/libchdr_huffman.c
 CC libretro-common/streams/chd_stream.c
 CC libretro-common/formats/libchdr/libchdr_zlib.c
 CC libretro-common/formats/libchdr/libchdr_lzma.c
-CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/png/rpng.c
+CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1051793 bytes (1028 KiB)
+Archive size: 1051726 bytes (1028 KiB)
 Everything is Ok

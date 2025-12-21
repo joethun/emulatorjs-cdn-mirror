@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1426780 bytes (1394 KiB)
+Archive size: 1426349 bytes (1393 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -569,8 +569,8 @@ CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
-CC libretro-common/audio/dsp_filters/tremolo.c
 CC libretro-common/audio/dsp_filters/reverb.c
+CC libretro-common/audio/dsp_filters/tremolo.c
 CC libretro-common/audio/dsp_filters/vibrato.c
 CC libretro-common/audio/dsp_filters/wahwah.c
 LD vice_xplus4_libretro.js <obj> libretro_emscripten.a -s USE_ZLIB=1 -lm -L. --no-heap-copy -s USE_ZLIB=1 -s STACK_SIZE=4194304 -s INITIAL_MEMORY=134217728 -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS=Browser,callMain,cwrap,getValue,HEAPU8,FS,PATH,ERRNO_CODES,AL,abort,ENV,stringToNewUTF8,UTF8ToString,Browser,EmscriptenSendCommand,EmscriptenReceiveCommandReply,EmulatorJSGetState -s ALLOW_MEMORY_GROWTH=1 -s EXPORTED_FUNCTIONS=_main,_malloc,_free,_load_state, _ejs_set_variable,_simulate_input,_shader_enable,_save_state_info,_set_cheat,_cmd_take_screenshot, _system_restart,_cmd_savefiles,_get_core_options,_cmd_save_state,_supports_states,_reset_cheat,_toggleMainLoop, _save_file_path,_get_disk_count,_set_current_disk,_get_current_disk,_refresh_save_files,_toggle_fastforward,_set_ff_ratio, _toggle_slow_motion,_set_sm_ratio,_toggle_rewind,_set_rewind_granularity,_get_current_frame_count,_ejs_set_keyboard_enabled, _set_vsync,_set_video_rotation,_get_video_dimensions,EmscriptenSendCommand,EmscriptenReceiveCommandReply -s ERROR_ON_UNDEFINED_SYMBOLS=0 -lidbfs.js -s MODULARIZE=1 -s EXPORT_NAME=EJS_Runtime -s ENVIRONMENT=web,worker -s WASM_BIGINT=1 --extern-pre-js emscripten/pre.js --js-library emscripten/library_rwebcam.js --js-library emscripten/library_platform_emscripten.js --js-library emscripten/emulatorjs.js -s FULL_ES2=1 -s MIN_WEBGL_VERSION=1 -s MAX_WEBGL_VERSION=2 -lopenal -lopenal -s ASYNCIFY=1 -s ASYNCIFY_STACK_SIZE=8192 -O3
@@ -580,7 +580,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6373027 bytes (6224 KiB)
+2 files, 6373030 bytes (6224 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xplus4-legacy-wasm.data
 
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1426087 bytes (1393 KiB)
+Archive size: 1426174 bytes (1393 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -698,8 +698,8 @@ CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
-CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
+CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
@@ -812,8 +812,8 @@ CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
 CC libretro-common/formats/libchdr/libchdr_chd.c
 CC libretro-common/formats/libchdr/libchdr_huffman.c
-CC libretro-common/formats/libchdr/libchdr_zlib.c
 CC libretro-common/streams/chd_stream.c
+CC libretro-common/formats/libchdr/libchdr_zlib.c
 CC libretro-common/formats/libchdr/libchdr_lzma.c
 CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/png/rpng_encode.c
@@ -832,8 +832,8 @@ CC tasks/task_netplay_nat_traversal.c
 CC tasks/task_netplay_find_content.c
 CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
-CC network/netplay/netplay_frontend.c
 CC tasks/task_core_updater.c
+CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
 CC tasks/task_decompress.c
 CC gfx/video_filters/2xsai.c
@@ -881,7 +881,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6909437 bytes (6748 KiB)
+2 files, 6909436 bytes (6748 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xplus4-thread-wasm.data
 
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1495894 bytes (1461 KiB)
+Archive size: 1495827 bytes (1461 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -952,8 +952,8 @@ CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
-CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
+CC libretro-common/file/file_path.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
@@ -996,8 +996,8 @@ CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
-CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/audio/dsp_filter.c
+CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
 CC libretro-common/features/features_cpu.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1494722 bytes (1460 KiB)
+Archive size: 1494630 bytes (1460 KiB)
 Everything is Ok

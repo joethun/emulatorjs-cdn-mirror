@@ -273,8 +273,8 @@ CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
-CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
+CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
 CC libretro-common/audio/dsp_filters/vibrato.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1079439 bytes (1055 KiB)
+Archive size: 1078912 bytes (1054 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -356,9 +356,9 @@ CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
+CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
-CC libretro-common/file/nbio/nbio_intf.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
@@ -419,8 +419,8 @@ CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
-CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
+CC libretro-common/formats/image_texture.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
@@ -473,8 +473,8 @@ CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/formats/xml/rxml.c
 CC libretro-common/formats/logiqx_dat/logiqx_dat.c
 CC deps/yxml/yxml.c
-CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/common/gl_common.c
+CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/drivers/gl2.c
 CC libretro-common/gfx/gl_capabilities.c
 CC libretro-common/glsym/rglgen.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1079498 bytes (1055 KiB)
+Archive size: 1079110 bytes (1054 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -644,12 +644,12 @@ CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
+CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
-CC libretro-common/streams/memory_stream.c
 CC libretro-common/lists/string_list.c
-CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
+CC libretro-common/string/stdstring.c
 CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
@@ -678,8 +678,8 @@ CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
-CC libretro-common/queues/fifo_queue.c
 CC input/input_keymaps.c
+CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1140933 bytes (1115 KiB)
+Archive size: 1140533 bytes (1114 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1015,8 +1015,8 @@ CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
-CC libretro-db/libretrodb.c
 CC libretro-db/bintree.c
+CC libretro-db/libretrodb.c
 CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
@@ -1075,8 +1075,8 @@ CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/common/gl_common.c
 CC gfx/drivers/gl2.c
 CC libretro-common/gfx/gl_capabilities.c
-CC libretro-common/glsym/rglgen.c
 CC gfx/drivers_context/emscriptenwebgl_ctx.c
+CC libretro-common/glsym/rglgen.c
 CC libretro-common/glsym/glsym_es2.c
 CC gfx/drivers_shader/shader_glsl.c
 CC gfx/video_shader_parse.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1137546 bytes (1111 KiB)
+Archive size: 1137986 bytes (1112 KiB)
 Everything is Ok

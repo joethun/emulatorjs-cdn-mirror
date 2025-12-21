@@ -92,8 +92,8 @@ CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
 CC core_info.c
-CC core_option_manager.c
 CC core_backup.c
+CC core_option_manager.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
@@ -216,8 +216,8 @@ CC libretro-common/streams/rzip_stream.c
 CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
 CC libretro-common/formats/libchdr/libchdr_chd.c
-CC libretro-common/streams/chd_stream.c
 CC libretro-common/formats/libchdr/libchdr_huffman.c
+CC libretro-common/streams/chd_stream.c
 CC libretro-common/formats/libchdr/libchdr_zlib.c
 CC libretro-common/formats/libchdr/libchdr_lzma.c
 CC libretro-common/formats/png/rpng.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 873557 bytes (854 KiB)
+Archive size: 874063 bytes (854 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -341,8 +341,8 @@ CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
-CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
+CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
@@ -413,8 +413,8 @@ CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
-CC input/bsv/bsvmovie.c
 CC libretro-common/audio/audio_mixer.c
+CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 873496 bytes (854 KiB)
+Archive size: 872758 bytes (853 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -836,8 +836,8 @@ CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
 CC tasks/task_decompress.c
-CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/2xsai.c
+CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
 CC gfx/video_filters/darken.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 933757 bytes (912 KiB)
+Archive size: 933778 bytes (912 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -933,8 +933,8 @@ CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
-CC libretro-common/lists/file_list.c
 CC libretro-common/compat/compat_strldup.c
+CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 932623 bytes (911 KiB)
+Archive size: 933035 bytes (912 KiB)
 Everything is Ok

@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1464022 bytes (1430 KiB)
+Archive size: 1465004 bytes (1431 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1463730 bytes (1430 KiB)
+Archive size: 1464741 bytes (1431 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -628,8 +628,8 @@ CC save.c
 CC tasks/task_save.c
 CC tasks/task_movie.c
 CC tasks/task_file_transfer.c
-CC tasks/task_playlist_manager.c
 CC tasks/task_image.c
+CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1542627 bytes (1507 KiB)
+Archive size: 1542359 bytes (1507 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -911,9 +911,9 @@ CC version_git.c
 CC frontend/frontend_driver.c
 CC retroarch.c
 CC runloop.c
+CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
 CC record/record_driver.c
-CC ui/ui_companion_driver.c
 CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1541152 bytes (1506 KiB)
+Archive size: 1541654 bytes (1506 KiB)
 Everything is Ok

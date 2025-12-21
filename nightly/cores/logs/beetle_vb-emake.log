@@ -48,9 +48,9 @@ CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
-CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
+CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
@@ -255,8 +255,8 @@ CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
-CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/scanline2x.c
+CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
@@ -274,8 +274,8 @@ CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/panning.c
-CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/phaser.c
+CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
 CC libretro-common/audio/dsp_filters/vibrato.c
 CC libretro-common/audio/dsp_filters/wahwah.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 870432 bytes (851 KiB)
+Archive size: 871088 bytes (851 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -322,8 +322,8 @@ CC record/record_driver.c
 CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
-CC intl/msg_hash_us.c
 CC libretro-common/queues/task_queue.c
+CC intl/msg_hash_us.c
 CC tasks/task_content.c
 CC tasks/task_patch.c
 CC save.c
@@ -435,8 +435,8 @@ CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
-CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
+CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
 CC menu/drivers/xmb.c
@@ -497,8 +497,8 @@ CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaEnc.c
-CC deps/7zip/Bra86.c
 CC deps/7zip/Bra.c
+CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 870769 bytes (851 KiB)
+Archive size: 870704 bytes (851 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 931087 bytes (910 KiB)
+Archive size: 931254 bytes (910 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -913,8 +913,8 @@ CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
-CC record/record_driver.c
 CC record/drivers/record_wav.c
+CC record/record_driver.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
@@ -937,8 +937,8 @@ CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
-CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
+CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
@@ -1164,8 +1164,8 @@ CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
-CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/iir.c
+CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
 CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 929965 bytes (909 KiB)
+Archive size: 930039 bytes (909 KiB)
 Everything is Ok

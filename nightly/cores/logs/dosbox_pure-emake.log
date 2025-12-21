@@ -53,8 +53,8 @@ CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
-CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/streams/network_stream.c
+CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
@@ -67,8 +67,8 @@ CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
-CC audio/audio_driver.c
 CC input/input_driver.c
+CC audio/audio_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
 CC gfx/video_driver.c
@@ -115,8 +115,8 @@ CC libretro-common/features/features_cpu.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
-CC manual_content_scan.c
 CC disk_control_interface.c
+CC manual_content_scan.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
@@ -297,7 +297,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1810998 bytes (1769 KiB)
+Archive size: 1810948 bytes (1769 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -397,8 +397,8 @@ CC runtime_file.c
 CC disk_index_file.c
 CC tasks/task_screenshot.c
 CC tasks/task_powerstate.c
-CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/pixconv.c
+CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
@@ -566,8 +566,8 @@ CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
-CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
+CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
@@ -594,5 +594,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1810057 bytes (1768 KiB)
+Archive size: 1809958 bytes (1768 KiB)
 Everything is Ok

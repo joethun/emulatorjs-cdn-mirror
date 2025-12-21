@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1062882 bytes (1038 KiB)
+Archive size: 1062999 bytes (1039 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -331,8 +331,8 @@ CC tasks/task_save.c
 CC tasks/task_movie.c
 CC tasks/task_file_transfer.c
 CC tasks/task_image.c
-CC tasks/task_manual_content_scan.c
 CC tasks/task_playlist_manager.c
+CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1063026 bytes (1039 KiB)
+Archive size: 1062317 bytes (1038 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -737,8 +737,8 @@ CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
-CC menu/drivers/ozone.c
 CC menu/drivers/xmb.c
+CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
 CC menu/menu_driver.c
@@ -756,8 +756,8 @@ CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_sublabel.c
 CC menu/cbs/menu_cbs_title.c
 CC menu/menu_displaylist.c
-CC menu/menu_contentless_cores.c
 CC gfx/gfx_widgets.c
+CC menu/menu_contentless_cores.c
 CC gfx/widgets/gfx_widget_screenshot.c
 CC gfx/widgets/gfx_widget_volume.c
 CC gfx/widgets/gfx_widget_generic_message.c
@@ -818,8 +818,8 @@ CC libretro-common/formats/libchdr/libchdr_lzma.c
 CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
-CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
+CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1123097 bytes (1097 KiB)
+Archive size: 1123087 bytes (1097 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -947,8 +947,8 @@ CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
-CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
+CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
@@ -1132,8 +1132,8 @@ CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
-CC tasks/task_decompress.c
 CC gfx/video_filters/2xsai.c
+CC tasks/task_decompress.c
 CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1122900 bytes (1097 KiB)
+Archive size: 1122861 bytes (1097 KiB)
 Everything is Ok
