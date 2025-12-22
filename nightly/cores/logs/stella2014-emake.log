@@ -29,8 +29,8 @@ CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
-CC tasks/task_content.c
 CC libretro-common/queues/task_queue.c
+CC tasks/task_content.c
 CC tasks/task_patch.c
 CC save.c
 CC tasks/task_save.c
@@ -86,8 +86,8 @@ CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
-CC libretro-common/queues/fifo_queue.c
 CC input/input_keymaps.c
+CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
@@ -174,8 +174,8 @@ CC gfx/widgets/gfx_widget_progress_message.c
 CC gfx/widgets/gfx_widget_load_content_animation.c
 CC tasks/task_overlay.c
 CC led/drivers/led_overlay.c
-CC gfx/drivers_font_renderer/stb.c
 CC gfx/drivers_font_renderer/stb_unicode.c
+CC gfx/drivers_font_renderer/stb.c
 CC libretro-common/formats/xml/rxml.c
 CC libretro-common/formats/logiqx_dat/logiqx_dat.c
 CC deps/yxml/yxml.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1071421 bytes (1047 KiB)
+Archive size: 1071520 bytes (1047 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -556,8 +556,8 @@ CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/dot_matrix_4x.c
-CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
+CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1070299 bytes (1046 KiB)
+Archive size: 1070304 bytes (1046 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -676,8 +676,8 @@ CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
-CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
+CC tasks/task_autodetect.c
 CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
@@ -808,8 +808,8 @@ CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
-CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
+CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_chd.c
 CC libretro-common/formats/libchdr/libchdr_huffman.c
 CC libretro-common/streams/chd_stream.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1133011 bytes (1107 KiB)
+Archive size: 1133246 bytes (1107 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -957,8 +957,8 @@ CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
-CC input/input_driver.c
 CC input/common/input_hid_common.c
+CC input/input_driver.c
 CC led/led_driver.c
 CC gfx/video_driver.c
 CC gfx/gfx_display.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1132892 bytes (1107 KiB)
+Archive size: 1132771 bytes (1107 KiB)
 Everything is Ok

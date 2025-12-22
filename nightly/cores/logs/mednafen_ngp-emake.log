@@ -61,8 +61,8 @@ CC libretro-common/memmap/memalign.c
 CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
-CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/queues/generic_queue.c
+CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 884093 bytes (864 KiB)
+Archive size: 884020 bytes (864 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -362,8 +362,8 @@ CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
-CC input/input_driver.c
 CC input/common/input_hid_common.c
+CC input/input_driver.c
 CC led/led_driver.c
 CC gfx/video_driver.c
 CC gfx/gfx_display.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 883546 bytes (863 KiB)
+Archive size: 883323 bytes (863 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -611,8 +611,8 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=1 HAVE_THREADS=1 PTHREAD_POOL_SIZE=4 ASYNC=1 HAVE_OPENGLES3=1 STACK_SIZE=4194304 INITIAL_HEAP=134217728 TARGET=mednafen_ngp_libretro.js -j8
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 CC version_git.c
-CC retroarch.c
 CC frontend/frontend_driver.c
+CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 946639 bytes (925 KiB)
+Archive size: 946641 bytes (925 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1033,8 +1033,8 @@ CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
-CC menu/drivers/xmb.c
 CC menu/drivers/materialui.c
+CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
@@ -1134,8 +1134,8 @@ CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
 CC tasks/task_decompress.c
 CC gfx/video_filters/2xsai.c
-CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/super2xsai.c
+CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
 CC gfx/video_filters/darken.c
 CC gfx/video_filters/epx.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 945629 bytes (924 KiB)
+Archive size: 945430 bytes (924 KiB)
 Everything is Ok

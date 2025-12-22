@@ -86,8 +86,8 @@ CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
-CC libretro-common/queues/fifo_queue.c
 CC input/input_keymaps.c
+CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 980284 bytes (958 KiB)
+Archive size: 980797 bytes (958 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 980067 bytes (958 KiB)
+Archive size: 980123 bytes (958 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -807,8 +807,8 @@ CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
-CC libretro-common/streams/rzip_stream.c
 CC libretro-common/formats/libchdr/libchdr_bitstream.c
+CC libretro-common/streams/rzip_stream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
 CC libretro-common/formats/libchdr/libchdr_chd.c
 CC libretro-common/formats/libchdr/libchdr_huffman.c
@@ -850,8 +850,8 @@ CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
-CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/scanline2x.c
+CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1040405 bytes (1017 KiB)
+Archive size: 1040918 bytes (1017 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -954,8 +954,8 @@ CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
-CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
+CC file_path_special.c
 CC audio/audio_driver.c
 CC input/input_driver.c
 CC input/common/input_hid_common.c
@@ -1025,8 +1025,8 @@ CC tasks/task_database.c
 CC tasks/task_database_cue.c
 CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
-CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
+CC input/drivers/emulatorjs_input.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1039370 bytes (1016 KiB)
+Archive size: 1039540 bytes (1016 KiB)
 Everything is Ok

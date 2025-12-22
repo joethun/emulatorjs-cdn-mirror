@@ -57,8 +57,8 @@ CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
-CC libretro-common/memmap/memalign.c
 CC libretro-common/file/nbio/nbio_stdio.c
+CC libretro-common/memmap/memalign.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
@@ -286,7 +286,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6371096 bytes (6222 KiB)
+2 files, 6371098 bytes (6222 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xplus4-wasm.data
 
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1426349 bytes (1393 KiB)
+Archive size: 1426918 bytes (1394 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -580,7 +580,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6373030 bytes (6224 KiB)
+2 files, 6373034 bytes (6224 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xplus4-legacy-wasm.data
 
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1426174 bytes (1393 KiB)
+Archive size: 1426021 bytes (1393 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1495827 bytes (1461 KiB)
+Archive size: 1496008 bytes (1461 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -947,17 +947,17 @@ CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
-CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
+CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
-CC libretro-common/file/file_path_io.c
 CC libretro-common/file/file_path.c
+CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
-CC audio/audio_driver.c
 CC input/input_driver.c
+CC audio/audio_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
 CC gfx/video_driver.c
@@ -980,8 +980,8 @@ CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
-CC core_info.c
 CC core_backup.c
+CC core_info.c
 CC core_option_manager.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
@@ -1147,8 +1147,8 @@ CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
-CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
+CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1494630 bytes (1460 KiB)
+Archive size: 1494319 bytes (1460 KiB)
 Everything is Ok

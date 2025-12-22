@@ -67,8 +67,8 @@ CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
-CC audio/audio_driver.c
 CC input/input_driver.c
+CC audio/audio_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
 CC gfx/video_driver.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1008681 bytes (986 KiB)
+Archive size: 1009344 bytes (986 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -434,8 +434,8 @@ CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
-CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
+CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
@@ -502,8 +502,8 @@ CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
-CC deps/ibxm/ibxm.c
 CC deps/7zip/7zStream.c
+CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
@@ -523,8 +523,8 @@ CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
 CC libretro-common/net/net_http_parse.c
-CC core_updater_list.c
 CC libretro-common/net/net_socket.c
+CC core_updater_list.c
 CC network/natt.c
 CC tasks/task_netplay_lan_scan.c
 CC tasks/task_netplay_nat_traversal.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1009324 bytes (986 KiB)
+Archive size: 1010198 bytes (987 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -635,8 +635,8 @@ CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
-CC libretro-common/compat/compat_strldup.c
 CC libretro-common/compat/fopen_utf8.c
+CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
@@ -668,8 +668,8 @@ CC gfx/gfx_display.c
 CC gfx/gfx_animation.c
 CC configuration.c
 CC libretro-common/dynamic/dylib.c
-CC libretro-common/queues/message_queue.c
 CC cores/dynamic_dummy.c
+CC libretro-common/queues/message_queue.c
 CC gfx/gfx_thumbnail_path.c
 CC gfx/gfx_thumbnail.c
 CC state_manager.c
@@ -727,8 +727,8 @@ CC database_info.c
 CC tasks/task_database.c
 CC tasks/task_database_cue.c
 CC menu/menu_explore.c
-CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
+CC tasks/task_menu_explore.c
 CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
@@ -835,8 +835,8 @@ CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
-CC tasks/task_decompress.c
 CC gfx/video_filters/2xsai.c
+CC tasks/task_decompress.c
 CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
@@ -849,9 +849,9 @@ CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
-CC gfx/video_filters/normal4x.c
 CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
+CC gfx/video_filters/normal4x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1072225 bytes (1048 KiB)
+Archive size: 1072234 bytes (1048 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1071282 bytes (1047 KiB)
+Archive size: 1071429 bytes (1047 KiB)
 Everything is Ok

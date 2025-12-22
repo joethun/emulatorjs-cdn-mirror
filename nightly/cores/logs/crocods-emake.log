@@ -24,8 +24,8 @@ CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
-CC record/drivers/record_wav.c
 CC record/record_driver.c
+CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
@@ -115,8 +115,8 @@ CC libretro-common/features/features_cpu.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
-CC disk_control_interface.c
 CC manual_content_scan.c
+CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 992545 bytes (970 KiB)
+Archive size: 991854 bytes (969 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -417,8 +417,8 @@ CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
-CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
+CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
@@ -680,8 +680,8 @@ CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
 CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
-CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
+CC libretro-common/compat/compat_fnmatch.c
 CC cheat_manager.c
 CC core_info.c
 CC core_backup.c
@@ -765,8 +765,8 @@ CC gfx/widgets/gfx_widget_libretro_message.c
 CC gfx/widgets/gfx_widget_progress_message.c
 CC gfx/widgets/gfx_widget_load_content_animation.c
 CC tasks/task_overlay.c
-CC led/drivers/led_overlay.c
 CC gfx/drivers_font_renderer/stb.c
+CC led/drivers/led_overlay.c
 CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/rthreads/rthreads.c
 CC gfx/video_thread_wrapper.c
@@ -788,8 +788,8 @@ CC libretro-common/streams/trans_stream.c
 CC libretro-common/streams/trans_stream_pipe.c
 CC libretro-common/file/archive_file_7z.c
 CC deps/7zip/7zArcIn.c
-CC deps/7zip/7zBuf.c
 CC deps/7zip/7zCrc.c
+CC deps/7zip/7zBuf.c
 CC deps/7zip/7zCrcOpt.c
 CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1052235 bytes (1028 KiB)
+Archive size: 1052130 bytes (1028 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1102,8 +1102,8 @@ CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
 CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
-CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/file/archive_file_zlib.c
+CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
 CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1051726 bytes (1028 KiB)
+Archive size: 1051634 bytes (1027 KiB)
 Everything is Ok

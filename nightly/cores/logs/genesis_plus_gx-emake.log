@@ -224,9 +224,9 @@ CC libretro-common/net/net_http.c
 CC libretro-common/net/net_http_parse.c
 CC libretro-common/net/net_socket.c
 CC core_updater_list.c
-CC network/natt.c
 CC tasks/task_netplay_lan_scan.c
 CC tasks/task_netplay_nat_traversal.c
+CC network/natt.c
 CC tasks/task_netplay_find_content.c
 CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
@@ -287,7 +287,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1269784 bytes (1241 KiB)
+Archive size: 1269789 bytes (1241 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -340,8 +340,8 @@ CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
-CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
+CC libretro-common/streams/network_stream.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
@@ -432,8 +432,8 @@ CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
-CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
+CC menu/drivers/xmb.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
 CC menu/menu_driver.c
@@ -574,7 +574,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1268413 bytes (1239 KiB)
+Archive size: 1268411 bytes (1239 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -600,8 +600,8 @@ CC version_git.c
 CC frontend/frontend_driver.c
 CC retroarch.c
 CC runloop.c
-CC camera/camera_driver.c
 CC ui/ui_companion_driver.c
+CC camera/camera_driver.c
 CC record/record_driver.c
 CC record/drivers/record_wav.c
 CC command.c
@@ -868,7 +868,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1336452 bytes (1306 KiB)
+Archive size: 1336451 bytes (1306 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -905,8 +905,8 @@ CC tasks/task_save.c
 CC tasks/task_movie.c
 CC tasks/task_file_transfer.c
 CC tasks/task_image.c
-CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
+CC tasks/task_playlist_manager.c
 CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
@@ -1158,5 +1158,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1334972 bytes (1304 KiB)
+Archive size: 1334975 bytes (1304 KiB)
 Everything is Ok

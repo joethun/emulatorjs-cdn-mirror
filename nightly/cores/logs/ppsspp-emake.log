@@ -143,8 +143,8 @@ CC libretro-common/audio/conversion/s16_to_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
-CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
+CC menu/drivers/rgui.c
 CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
@@ -297,5 +297,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 4527145 bytes (4422 KiB)
+Archive size: 4527525 bytes (4422 KiB)
 Everything is Ok

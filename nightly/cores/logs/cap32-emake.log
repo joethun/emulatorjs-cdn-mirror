@@ -271,8 +271,8 @@ CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
-CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
+CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
 CC libretro-common/audio/dsp_filters/reverb.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1037716 bytes (1014 KiB)
+Archive size: 1037338 bytes (1014 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -482,8 +482,8 @@ CC gfx/drivers_context/emscriptenwebgl_ctx.c
 CC libretro-common/glsym/glsym_es2.c
 CC gfx/drivers_shader/shader_glsl.c
 CC gfx/video_shader_parse.c
-CC libretro-common/streams/trans_stream.c
 CC libretro-common/file/archive_file.c
+CC libretro-common/streams/trans_stream.c
 CC libretro-common/streams/trans_stream_pipe.c
 CC libretro-common/file/archive_file_7z.c
 CC deps/7zip/7zArcIn.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1037366 bytes (1014 KiB)
+Archive size: 1037283 bytes (1013 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -671,8 +671,8 @@ CC libretro-common/dynamic/dylib.c
 CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
 CC gfx/gfx_thumbnail_path.c
-CC state_manager.c
 CC gfx/gfx_thumbnail.c
+CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
@@ -736,8 +736,8 @@ CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
-CC menu/drivers/xmb.c
 CC menu/drivers/materialui.c
+CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1099552 bytes (1074 KiB)
+Archive size: 1099530 bytes (1074 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -910,8 +910,8 @@ make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/Retr
 CC version_git.c
 CC frontend/frontend_driver.c
 CC retroarch.c
-CC runloop.c
 CC ui/ui_companion_driver.c
+CC runloop.c
 CC camera/camera_driver.c
 CC record/record_driver.c
 CC record/drivers/record_wav.c
@@ -925,8 +925,8 @@ CC save.c
 CC tasks/task_save.c
 CC tasks/task_movie.c
 CC tasks/task_file_transfer.c
-CC tasks/task_playlist_manager.c
 CC tasks/task_image.c
+CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
@@ -970,8 +970,8 @@ CC libretro-common/queues/message_queue.c
 CC gfx/gfx_thumbnail_path.c
 CC gfx/gfx_thumbnail.c
 CC state_manager.c
-CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
+CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
@@ -1080,8 +1080,8 @@ CC gfx/drivers_context/emscriptenwebgl_ctx.c
 CC libretro-common/glsym/glsym_es2.c
 CC gfx/drivers_shader/shader_glsl.c
 CC gfx/video_shader_parse.c
-CC libretro-common/streams/trans_stream.c
 CC libretro-common/file/archive_file.c
+CC libretro-common/streams/trans_stream.c
 CC libretro-common/streams/trans_stream_pipe.c
 CC libretro-common/file/archive_file_7z.c
 CC deps/7zip/7zArcIn.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1098535 bytes (1073 KiB)
+Archive size: 1098598 bytes (1073 KiB)
 Everything is Ok

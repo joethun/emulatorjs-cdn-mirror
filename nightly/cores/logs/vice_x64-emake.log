@@ -42,8 +42,8 @@ CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
-CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
+CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
@@ -140,8 +140,8 @@ CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
-CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
+CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
@@ -192,8 +192,8 @@ CC libretro-common/file/archive_file.c
 CC libretro-common/streams/trans_stream.c
 CC libretro-common/streams/trans_stream_pipe.c
 CC libretro-common/file/archive_file_7z.c
-CC deps/7zip/7zBuf.c
 CC deps/7zip/7zArcIn.c
+CC deps/7zip/7zBuf.c
 CC deps/7zip/7zCrc.c
 CC deps/7zip/7zCrcOpt.c
 CC deps/7zip/7zDec.c
@@ -271,8 +271,8 @@ CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
-CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
+CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
 CC libretro-common/audio/dsp_filters/reverb.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1542878 bytes (1507 KiB)
+Archive size: 1542288 bytes (1507 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -516,8 +516,8 @@ CC libretro-common/formats/libchdr/libchdr_zlib.c
 CC libretro-common/formats/libchdr/libchdr_lzma.c
 CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/png/rpng_encode.c
-CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
+CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/image_transfer.c
 CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_compat.c
@@ -580,7 +580,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 7136848 bytes (6970 KiB)
+2 files, 7136846 bytes (6970 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_x64-legacy-wasm.data
 
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1542319 bytes (1507 KiB)
+Archive size: 1542718 bytes (1507 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -715,8 +715,8 @@ CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
-CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
+CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1612188 bytes (1575 KiB)
+Archive size: 1612152 bytes (1575 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -928,8 +928,8 @@ CC tasks/task_file_transfer.c
 CC tasks/task_image.c
 CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
-CC libretro-common/encodings/encoding_utf.c
 CC tasks/task_core_backup.c
+CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
@@ -1077,8 +1077,8 @@ CC gfx/drivers/gl2.c
 CC libretro-common/gfx/gl_capabilities.c
 CC libretro-common/glsym/rglgen.c
 CC gfx/drivers_context/emscriptenwebgl_ctx.c
-CC gfx/drivers_shader/shader_glsl.c
 CC libretro-common/glsym/glsym_es2.c
+CC gfx/drivers_shader/shader_glsl.c
 CC gfx/video_shader_parse.c
 CC libretro-common/file/archive_file.c
 CC libretro-common/streams/trans_stream.c
@@ -1132,8 +1132,8 @@ CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
-CC gfx/video_filters/2xsai.c
 CC tasks/task_decompress.c
+CC gfx/video_filters/2xsai.c
 CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1610903 bytes (1574 KiB)
+Archive size: 1611081 bytes (1574 KiB)
 Everything is Ok

@@ -24,8 +24,8 @@ CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
-CC record/record_driver.c
 CC record/drivers/record_wav.c
+CC record/record_driver.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
@@ -273,8 +273,8 @@ CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
-CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
+CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
 CC libretro-common/audio/dsp_filters/vibrato.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 881399 bytes (861 KiB)
+Archive size: 881967 bytes (862 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -407,13 +407,13 @@ CC libretro-common/utils/md5.c
 CC playlist.c
 CC libretro-common/features/features_cpu.c
 CC verbosity.c
+CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
-CC libretro-common/playlists/label_sanitization.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
-CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
+CC libretro-common/audio/audio_mix.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
@@ -549,8 +549,8 @@ CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
-CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
+CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 880991 bytes (861 KiB)
+Archive size: 881960 bytes (862 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -697,8 +697,8 @@ CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
-CC gfx/video_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
+CC gfx/video_filter.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 942204 bytes (921 KiB)
+Archive size: 942321 bytes (921 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -913,8 +913,8 @@ CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
-CC record/record_driver.c
 CC record/drivers/record_wav.c
+CC record/record_driver.c
 CC command.c
 CC msg_hash.c
 CC intl/msg_hash_us.c
@@ -924,8 +924,8 @@ CC tasks/task_patch.c
 CC save.c
 CC tasks/task_save.c
 CC tasks/task_movie.c
-CC tasks/task_image.c
 CC tasks/task_file_transfer.c
+CC tasks/task_image.c
 CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
@@ -980,8 +980,8 @@ CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
-CC core_info.c
 CC core_backup.c
+CC core_info.c
 CC core_option_manager.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
@@ -1080,8 +1080,8 @@ CC gfx/drivers_context/emscriptenwebgl_ctx.c
 CC libretro-common/glsym/glsym_es2.c
 CC gfx/drivers_shader/shader_glsl.c
 CC gfx/video_shader_parse.c
-CC libretro-common/file/archive_file.c
 CC libretro-common/streams/trans_stream.c
+CC libretro-common/file/archive_file.c
 CC libretro-common/streams/trans_stream_pipe.c
 CC libretro-common/file/archive_file_7z.c
 CC deps/7zip/7zArcIn.c
@@ -1137,8 +1137,8 @@ CC gfx/video_filters/2xsai.c
 CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
-CC gfx/video_filters/darken.c
 CC gfx/video_filters/epx.c
+CC gfx/video_filters/darken.c
 CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/blargg_ntsc_snes.c
 CC gfx/video_filters/lq2x.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 941035 bytes (919 KiB)
+Archive size: 941119 bytes (920 KiB)
 Everything is Ok

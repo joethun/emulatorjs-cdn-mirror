@@ -45,8 +45,8 @@ CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
-CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
+CC libretro-common/lists/file_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
@@ -287,7 +287,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 5407700 bytes (5281 KiB)
+Archive size: 5411698 bytes (5285 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -574,7 +574,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 5408008 bytes (5282 KiB)
+Archive size: 5400570 bytes (5274 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -684,8 +684,8 @@ CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
-CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
+CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
@@ -842,8 +842,8 @@ CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
 CC gfx/video_filters/upscale_mix_240x160_320x240.c
-CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/chorus.c
+CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
@@ -868,7 +868,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 5318471 bytes (5194 KiB)
+Archive size: 5317774 bytes (5194 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -946,8 +946,8 @@ CC configuration.c
 CC libretro-common/dynamic/dylib.c
 CC cores/dynamic_dummy.c
 CC libretro-common/queues/message_queue.c
-CC gfx/gfx_thumbnail.c
 CC gfx/gfx_thumbnail_path.c
+CC gfx/gfx_thumbnail.c
 CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
@@ -1014,8 +1014,8 @@ CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
 CC menu/drivers/xmb.c
-CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
+CC menu/drivers/ozone.c
 CC menu/menu_setting.c
 CC menu/menu_driver.c
 CC menu/cbs/menu_cbs_ok.c
@@ -1158,5 +1158,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 5319223 bytes (5195 KiB)
+Archive size: 5317134 bytes (5193 KiB)
 Everything is Ok

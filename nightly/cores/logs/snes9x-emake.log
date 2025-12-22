@@ -262,8 +262,8 @@ CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/dot_matrix_4x.c
-CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
+CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1111828 bytes (1086 KiB)
+Archive size: 1111467 bytes (1086 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -385,8 +385,8 @@ CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
-CC core_info.c
 CC core_backup.c
+CC core_info.c
 CC core_option_manager.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
@@ -532,8 +532,8 @@ CC tasks/task_netplay_find_content.c
 CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
-CC network/netplay/netplay_room_parse.c
 CC network/netplay/netplay_frontend.c
+CC network/netplay/netplay_room_parse.c
 CC tasks/task_decompress.c
 CC gfx/video_filters/2xsai.c
 CC gfx/video_filters/super2xsai.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1111111 bytes (1086 KiB)
+Archive size: 1111877 bytes (1086 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1173569 bytes (1147 KiB)
+Archive size: 1173360 bytes (1146 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -917,8 +917,8 @@ CC record/record_driver.c
 CC record/drivers/record_wav.c
 CC command.c
 CC msg_hash.c
-CC intl/msg_hash_us.c
 CC libretro-common/queues/task_queue.c
+CC intl/msg_hash_us.c
 CC tasks/task_content.c
 CC tasks/task_patch.c
 CC save.c
@@ -927,8 +927,8 @@ CC tasks/task_movie.c
 CC tasks/task_file_transfer.c
 CC tasks/task_image.c
 CC tasks/task_playlist_manager.c
-CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
+CC tasks/task_manual_content_scan.c
 CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
@@ -1015,8 +1015,8 @@ CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
-CC libretro-db/libretrodb.c
 CC libretro-db/bintree.c
+CC libretro-db/libretrodb.c
 CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
@@ -1139,8 +1139,8 @@ CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
 CC gfx/video_filters/darken.c
 CC gfx/video_filters/epx.c
-CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/blargg_ntsc_snes.c
+CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/lq2x.c
 CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1173971 bytes (1147 KiB)
+Archive size: 1173970 bytes (1147 KiB)
 Everything is Ok

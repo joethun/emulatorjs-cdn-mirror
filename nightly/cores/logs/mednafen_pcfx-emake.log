@@ -53,8 +53,8 @@ CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
-CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
+CC libretro-common/streams/network_stream.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
@@ -91,8 +91,8 @@ CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
-CC core_info.c
 CC core_backup.c
+CC core_info.c
 CC core_option_manager.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
@@ -105,8 +105,8 @@ CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
-CC gfx/video_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
+CC gfx/video_filter.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
@@ -120,8 +120,8 @@ CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
-CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
+CC input/bsv/bsvmovie.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
@@ -183,8 +183,8 @@ CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/common/gl_common.c
 CC gfx/drivers/gl2.c
 CC libretro-common/gfx/gl_capabilities.c
-CC libretro-common/glsym/rglgen.c
 CC gfx/drivers_context/emscriptenwebgl_ctx.c
+CC libretro-common/glsym/rglgen.c
 CC libretro-common/glsym/glsym_es3.c
 CC gfx/drivers_shader/shader_glsl.c
 CC gfx/video_shader_parse.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 965921 bytes (944 KiB)
+Archive size: 965354 bytes (943 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -404,8 +404,8 @@ CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
-CC playlist.c
 CC libretro-common/features/features_cpu.c
+CC playlist.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
@@ -473,8 +473,8 @@ CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/formats/xml/rxml.c
 CC libretro-common/formats/logiqx_dat/logiqx_dat.c
 CC deps/yxml/yxml.c
-CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/common/gl_common.c
+CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/drivers/gl2.c
 CC libretro-common/gfx/gl_capabilities.c
 CC libretro-common/glsym/rglgen.c
@@ -524,8 +524,8 @@ CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
 CC libretro-common/net/net_http_parse.c
 CC libretro-common/net/net_socket.c
-CC network/natt.c
 CC core_updater_list.c
+CC network/natt.c
 CC tasks/task_netplay_lan_scan.c
 CC tasks/task_netplay_nat_traversal.c
 CC tasks/task_netplay_find_content.c
@@ -561,9 +561,9 @@ CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
-CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
+CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 965748 bytes (944 KiB)
+Archive size: 965460 bytes (943 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1029209 bytes (1006 KiB)
+Archive size: 1029338 bytes (1006 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -978,8 +978,8 @@ CC input/input_autodetect_builtin.c
 CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
-CC cheat_manager.c
 CC libretro-common/compat/compat_posix_string.c
+CC cheat_manager.c
 CC core_info.c
 CC core_backup.c
 CC core_option_manager.c
@@ -1011,15 +1011,15 @@ CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
-CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_getopt.c
+CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
-CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
+CC libretro-db/rmsgpack.c
 CC database_info.c
 CC tasks/task_database.c
 CC tasks/task_database_cue.c
@@ -1032,8 +1032,8 @@ CC libretro-common/audio/conversion/s16_to_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
-CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
+CC menu/drivers/rgui.c
 CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
@@ -1169,8 +1169,8 @@ CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
 CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
-CC libretro-common/audio/dsp_filters/wahwah.c
 CC libretro-common/audio/dsp_filters/vibrato.c
+CC libretro-common/audio/dsp_filters/wahwah.c
 LD mednafen_pcfx_libretro.js <obj> libretro_emscripten.a -s USE_ZLIB=1 -lm -L. --no-heap-copy -s USE_ZLIB=1 -s STACK_SIZE=4194304 -s INITIAL_MEMORY=134217728 -s NO_EXIT_RUNTIME=1 -s EXPORTED_RUNTIME_METHODS=Browser,callMain,cwrap,getValue,HEAPU8,FS,PATH,ERRNO_CODES,AL,abort,ENV,stringToNewUTF8,UTF8ToString,Browser,EmscriptenSendCommand,EmscriptenReceiveCommandReply,EmulatorJSGetState -s ALLOW_MEMORY_GROWTH=1 -s EXPORTED_FUNCTIONS=_main,_malloc,_free,_load_state, _ejs_set_variable,_simulate_input,_shader_enable,_save_state_info,_set_cheat,_cmd_take_screenshot, _system_restart,_cmd_savefiles,_get_core_options,_cmd_save_state,_supports_states,_reset_cheat,_toggleMainLoop, _save_file_path,_get_disk_count,_set_current_disk,_get_current_disk,_refresh_save_files,_toggle_fastforward,_set_ff_ratio, _toggle_slow_motion,_set_sm_ratio,_toggle_rewind,_set_rewind_granularity,_get_current_frame_count,_ejs_set_keyboard_enabled, _set_vsync,_set_video_rotation,_get_video_dimensions,EmscriptenSendCommand,EmscriptenReceiveCommandReply -s ERROR_ON_UNDEFINED_SYMBOLS=0 -lidbfs.js -s MODULARIZE=1 -s EXPORT_NAME=EJS_Runtime -s ENVIRONMENT=web,worker -s WASM_BIGINT=1 --extern-pre-js emscripten/pre.js --js-library emscripten/library_rwebcam.js --js-library emscripten/library_platform_emscripten.js --js-library emscripten/emulatorjs.js -s FULL_ES2=1 -s MIN_WEBGL_VERSION=1 -s MAX_WEBGL_VERSION=2 -lopenal -lopenal -s MAXIMUM_MEMORY=4294967296 -pthread -s PTHREAD_POOL_SIZE=4 -s ASYNCIFY=1 -s ASYNCIFY_STACK_SIZE=8192 -O3
 make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1027965 bytes (1004 KiB)
+Archive size: 1027976 bytes (1004 KiB)
 Everything is Ok

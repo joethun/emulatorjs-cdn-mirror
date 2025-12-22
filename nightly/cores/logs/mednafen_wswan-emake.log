@@ -106,8 +106,8 @@ CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
-CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
+CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
@@ -126,8 +126,8 @@ CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
-CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
+CC libretro-db/bintree.c
 CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
@@ -164,8 +164,8 @@ CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_sublabel.c
 CC menu/cbs/menu_cbs_title.c
 CC menu/menu_displaylist.c
-CC gfx/gfx_widgets.c
 CC menu/menu_contentless_cores.c
+CC gfx/gfx_widgets.c
 CC gfx/widgets/gfx_widget_screenshot.c
 CC gfx/widgets/gfx_widget_volume.c
 CC gfx/widgets/gfx_widget_generic_message.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 892223 bytes (872 KiB)
+Archive size: 891902 bytes (871 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -380,8 +380,8 @@ CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
-CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
+CC input/input_keymaps.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
@@ -550,8 +550,8 @@ CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
 CC gfx/video_filters/scanline2x.c
-CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/grid3x.c
+CC gfx/video_filters/grid2x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_3x.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 891833 bytes (871 KiB)
+Archive size: 891940 bytes (872 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -612,8 +612,8 @@ BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=1 HAVE_TH
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 CC version_git.c
 CC frontend/frontend_driver.c
-CC runloop.c
 CC retroarch.c
+CC runloop.c
 CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
 CC record/record_driver.c
@@ -679,8 +679,8 @@ CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
 CC input/input_keymaps.c
-CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
+CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
 CC core_info.c
@@ -712,8 +712,8 @@ CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
-CC audio/drivers_resampler/cc_resampler.c
 CC input/bsv/bsvmovie.c
+CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
@@ -724,8 +724,8 @@ CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
 CC database_info.c
-CC tasks/task_database_cue.c
 CC tasks/task_database.c
+CC tasks/task_database_cue.c
 CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 952598 bytes (931 KiB)
+Archive size: 952610 bytes (931 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -974,16 +974,16 @@ CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
 CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
-CC input/input_keymaps.c
 CC input/input_autodetect_builtin.c
+CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
 CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
 CC core_info.c
 CC core_backup.c
-CC core_option_manager.c
 CC libretro-common/file/config_file.c
+CC core_option_manager.c
 CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
 CC disk_index_file.c
@@ -1021,8 +1021,8 @@ CC libretro-db/query.c
 CC libretro-db/rmsgpack.c
 CC libretro-db/rmsgpack_dom.c
 CC database_info.c
-CC tasks/task_database_cue.c
 CC tasks/task_database.c
+CC tasks/task_database_cue.c
 CC menu/menu_explore.c
 CC tasks/task_menu_explore.c
 CC input/drivers/emulatorjs_input.c
@@ -1095,8 +1095,8 @@ CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaEnc.c
-CC deps/7zip/Bra86.c
 CC deps/7zip/Bra.c
+CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
@@ -1117,8 +1117,8 @@ CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
-CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_compat.c
+CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_http.c
 CC libretro-common/net/net_http_parse.c
 CC libretro-common/net/net_socket.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 951685 bytes (930 KiB)
+Archive size: 951691 bytes (930 KiB)
 Everything is Ok

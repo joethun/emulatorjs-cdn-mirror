@@ -50,8 +50,8 @@ CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
-CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
+CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
@@ -106,15 +106,15 @@ CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
-CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
+CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
 CC libretro-common/features/features_cpu.c
 CC verbosity.c
-CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
+CC libretro-common/playlists/label_sanitization.c
 CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
@@ -255,8 +255,8 @@ CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
 CC gfx/video_filters/dot_matrix_3x.c
 CC gfx/video_filters/dot_matrix_4x.c
-CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
+CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
@@ -287,7 +287,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1215418 bytes (1187 KiB)
+Archive size: 1212024 bytes (1184 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -379,8 +379,8 @@ CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
 CC core_info.c
-CC core_backup.c
 CC core_option_manager.c
+CC core_backup.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
@@ -427,8 +427,8 @@ CC input/drivers/emulatorjs_input.c
 CC frontend/drivers/platform_emulatorjs.c
 CC audio/drivers/openal.c
 CC libretro-common/audio/conversion/s16_to_float.c
-CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
+CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
@@ -500,8 +500,8 @@ CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
-CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/png/rpng.c
+CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
@@ -574,7 +574,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1216232 bytes (1188 KiB)
+Archive size: 1216236 bytes (1188 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -787,15 +787,15 @@ CC deps/7zip/LzmaEnc.c
 CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
-CC deps/7zip/7zFile.c
 CC deps/7zip/Bcj2.c
+CC deps/7zip/7zFile.c
 CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
-CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/png/rpng.c
+CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
 CC libretro-common/formats/image_transfer.c
@@ -906,8 +906,8 @@ CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
-CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
+CC libretro-common/streams/network_stream.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
@@ -1054,8 +1054,8 @@ CC deps/7zip/7zCrc.c
 CC deps/7zip/7zCrcOpt.c
 CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
-CC deps/7zip/LzFind.c
 CC deps/7zip/Delta.c
+CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaEnc.c

@@ -18,8 +18,8 @@ rm -f retroarch.js
 make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 BUILD COMMAND: make -C ../ -f Makefile.emulatorjs HAVE_7ZIP=1 HAVE_CHD=1 HAVE_THREADS=0 PTHREAD_POOL_SIZE=0 ASYNC=1 HAVE_OPENGLES3=1 STACK_SIZE=4194304 INITIAL_HEAP=134217728 TARGET=vice_xpet_libretro.js -j8
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
-CC frontend/frontend_driver.c
 CC version_git.c
+CC frontend/frontend_driver.c
 CC retroarch.c
 CC runloop.c
 CC ui/ui_companion_driver.c
@@ -44,8 +44,8 @@ CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
-CC libretro-common/lists/file_list.c
 CC libretro-common/compat/compat_strldup.c
+CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
@@ -202,9 +202,9 @@ CC deps/7zip/Delta.c
 CC deps/7zip/LzFind.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
+CC deps/7zip/LzmaEnc.c
 CC deps/7zip/Bra.c
 CC deps/7zip/Bra86.c
-CC deps/7zip/LzmaEnc.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
@@ -266,8 +266,8 @@ CC gfx/video_filters/upscale_1_5x.c
 CC gfx/video_filters/upscale_1_66x_fast.c
 CC gfx/video_filters/upscale_256x_320x240.c
 CC gfx/video_filters/picoscale_256x_320x240.c
-CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC gfx/video_filters/upscale_240x160_320x240.c
+CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
@@ -286,7 +286,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6277933 bytes (6131 KiB)
+2 files, 6277929 bytes (6131 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xpet-wasm.data
 
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1381822 bytes (1350 KiB)
+Archive size: 1381727 bytes (1350 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -338,8 +338,8 @@ CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
-CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
+CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
@@ -580,7 +580,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6279867 bytes (6133 KiB)
+2 files, 6279868 bytes (6133 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xpet-legacy-wasm.data
 
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1381452 bytes (1350 KiB)
+Archive size: 1381511 bytes (1350 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -648,8 +648,8 @@ CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
-CC libretro-common/memmap/memalign.c
 CC libretro-common/string/stdstring.c
+CC libretro-common/memmap/memalign.c
 CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1449329 bytes (1416 KiB)
+Archive size: 1449474 bytes (1416 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1068,8 +1068,8 @@ CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/rthreads/rthreads.c
 CC gfx/video_thread_wrapper.c
 CC audio/audio_thread_wrapper.c
-CC libretro-common/formats/xml/rxml.c
 CC libretro-common/formats/logiqx_dat/logiqx_dat.c
+CC libretro-common/formats/xml/rxml.c
 CC deps/yxml/yxml.c
 CC gfx/drivers_context/gfx_null_ctx.c
 CC gfx/common/gl_common.c
@@ -1178,7 +1178,7 @@ make: Leaving directory '/home/runner/ejs-runner/_work/build/build/compile/Retro
 p7zip Version 16.02 (locale=en_AU.UTF-8,Utf16=on,HugeFiles=on,64 bits,8 CPUs 11th Gen Intel(R) Core(TM) i5-11600 @ 2.80GHz (A0671),ASM,AES-NI)
 
 Scanning the drive:
-2 files, 6801088 bytes (6642 KiB)
+2 files, 6801089 bytes (6642 KiB)
 
 Creating archive: ../../EmulatorJS/data/cores/vice_xpet-thread-legacy-wasm.data
 
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1448879 bytes (1415 KiB)
+Archive size: 1448796 bytes (1415 KiB)
 Everything is Ok

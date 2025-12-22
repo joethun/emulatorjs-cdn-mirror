@@ -405,6 +405,7 @@ INSTALL	libswresample/libswresample.pc
 INSTALL	libswscale/swscale.h
 INSTALL	libswscale/version.h
 INSTALL	libswscale/libswscale.pc
+AR	libavformat/libavformat.a
 INSTALL	libavutil/adler32.h
 INSTALL	libavutil/aes.h
 INSTALL	libavutil/aes_ctr.h
@@ -473,15 +474,14 @@ INSTALL	libavutil/tea.h
 INSTALL	libavutil/avconfig.h
 INSTALL	libavutil/ffversion.h
 INSTALL	libavutil/libavutil.pc
-AR	libavformat/libavformat.a
 AR	libavcodec/libavcodec.a
 AR	libswresample/libswresample.a
 INSTALL	libavformat/libavformat.a
 INSTALL	libavcodec/libavcodec.a
 INSTALL	libswresample/libswresample.a
 AR	libavutil/libavutil.a
-INSTALL	libavutil/libavutil.a
 AR	libswscale/libswscale.a
+INSTALL	libavutil/libavutil.a
 INSTALL	libswscale/libswscale.a
 /home/runner/ejs-runner/_work/build/build/emsdk/upstream/emscripten/em++ -std=c++17 -O2 -DNDEBUG -DRC_DISABLE_LUA -DSTACK_LINE_READER_BUFFER_SIZE=1024 -DHTTPS_NOT_AVAILABLE -DARMIPS_USE_STD_FILESYSTEM -DHAVE_STRONG_GETAUXVAL -DVK_USE_PLATFORM_XLIB_KHR -D__LIBRETRO__ -DPPSSPP -DWITH_UPNP -DGLEW_STATIC -DGLEW_NO_GLU -DMINIUPNP_STATICLIB -DUSE_FFMPEG -I../ffmpeg/linux/wasm32/include -I. -I.. -I../Common -I../libretro -I../ext/libadrenotools/lib/linkernsbypass -I../ext/libadrenotools/include -I../ext/OpenXR-SDK/include -I../ext/glslang -I../ext/glslang-build -I../ext/native -I../ext/minimp3 -I../ext/zlib -I../ext/cpu_features/include -I../ext/zstd/lib -I../ext/snappy -I../ffmpeg -I../ffmpeg/linux/wasm32/include -I../ext/cityhash -I../ext/armips -I../ext/armips/ext/filesystem/include -I../ext/armips/ext/tinyformat -I../ext/zstd/lib -I../ext -I../ext/native -I../ext/libpng17 -I../ext/libkirk -I../ext/xbrz -I../ext/xxhash -I../ext/glew -I../ext/libzip -I../ext/lua -I../ext/rcheevos/include -I../ext/at3_standalone -I../ext/miniupnp-build -I../ext/miniupnp/miniupnpc/include -I../ext/miniupnp/miniupnpc/src  -msimd128 -msse3 -mssse3 -msse4.1 -pthread -D__EMSCRIPTEN__ -DNO_MMAP  -msimd128 -msse3 -mssse3 -msse4.1 -pthread -D__EMSCRIPTEN__ -DNO_MMAP -msse -msse2 -D_M_IX86 -D_ARCH_32 -m32 -DGLES  -DDYNAREC -ffunction-sections -fdata-sections -c -o../ext/minimp3/minimp3.o ../ext/minimp3/minimp3.cpp
 /home/runner/ejs-runner/_work/build/build/emsdk/upstream/emscripten/em++ -std=c++17 -O2 -DNDEBUG -DRC_DISABLE_LUA -DSTACK_LINE_READER_BUFFER_SIZE=1024 -DHTTPS_NOT_AVAILABLE -DARMIPS_USE_STD_FILESYSTEM -DHAVE_STRONG_GETAUXVAL -DVK_USE_PLATFORM_XLIB_KHR -D__LIBRETRO__ -DPPSSPP -DWITH_UPNP -DGLEW_STATIC -DGLEW_NO_GLU -DMINIUPNP_STATICLIB -DUSE_FFMPEG -I../ffmpeg/linux/wasm32/include -I. -I.. -I../Common -I../libretro -I../ext/libadrenotools/lib/linkernsbypass -I../ext/libadrenotools/include -I../ext/OpenXR-SDK/include -I../ext/glslang -I../ext/glslang-build -I../ext/native -I../ext/minimp3 -I../ext/zlib -I../ext/cpu_features/include -I../ext/zstd/lib -I../ext/snappy -I../ffmpeg -I../ffmpeg/linux/wasm32/include -I../ext/cityhash -I../ext/armips -I../ext/armips/ext/filesystem/include -I../ext/armips/ext/tinyformat -I../ext/zstd/lib -I../ext -I../ext/native -I../ext/libpng17 -I../ext/libkirk -I../ext/xbrz -I../ext/xxhash -I../ext/glew -I../ext/libzip -I../ext/lua -I../ext/rcheevos/include -I../ext/at3_standalone -I../ext/miniupnp-build -I../ext/miniupnp/miniupnpc/include -I../ext/miniupnp/miniupnpc/src  -msimd128 -msse3 -mssse3 -msse4.1 -pthread -D__EMSCRIPTEN__ -DNO_MMAP  -msimd128 -msse3 -mssse3 -msse4.1 -pthread -D__EMSCRIPTEN__ -DNO_MMAP -msse -msse2 -D_M_IX86 -D_ARCH_32 -m32 -DGLES  -DDYNAREC -ffunction-sections -fdata-sections -c -o../ext/at3_standalone/atrac.o ../ext/at3_standalone/atrac.cpp

@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1536660 bytes (1501 KiB)
+Archive size: 1536659 bytes (1501 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1537751 bytes (1502 KiB)
+Archive size: 1537290 bytes (1502 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -647,8 +647,8 @@ CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
-CC libretro-common/string/stdstring.c
 CC libretro-common/lists/string_list.c
+CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
 CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
@@ -663,8 +663,8 @@ CC audio/audio_driver.c
 CC input/input_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
-CC gfx/video_driver.c
 CC gfx/gfx_display.c
+CC gfx/video_driver.c
 CC gfx/gfx_animation.c
 CC configuration.c
 CC libretro-common/dynamic/dylib.c
@@ -699,8 +699,8 @@ CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
-CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
+CC libretro-common/audio/dsp_filter.c
 CC libretro-common/utils/md5.c
 CC playlist.c
 CC libretro-common/features/features_cpu.c
@@ -711,9 +711,9 @@ CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
+CC input/bsv/bsvmovie.c
 CC libretro-common/audio/audio_mixer.c
 CC audio/drivers_resampler/cc_resampler.c
-CC input/bsv/bsvmovie.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
 CC libretro-common/compat/compat_strl.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1607156 bytes (1570 KiB)
+Archive size: 1606876 bytes (1570 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -958,8 +958,8 @@ CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
 CC input/input_driver.c
-CC input/common/input_hid_common.c
 CC led/led_driver.c
+CC input/common/input_hid_common.c
 CC gfx/video_driver.c
 CC gfx/gfx_display.c
 CC gfx/gfx_animation.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1606580 bytes (1569 KiB)
+Archive size: 1606134 bytes (1569 KiB)
 Everything is Ok

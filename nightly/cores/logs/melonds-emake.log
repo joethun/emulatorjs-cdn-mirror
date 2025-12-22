@@ -148,8 +148,8 @@ CC menu/drivers/materialui.c
 CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
-CC menu/menu_setting.c
 CC menu/menu_driver.c
+CC menu/menu_setting.c
 CC menu/cbs/menu_cbs_ok.c
 CC menu/cbs/menu_cbs_cancel.c
 CC menu/cbs/menu_cbs_select.c
@@ -270,8 +270,8 @@ CC gfx/video_filters/upscale_240x160_320x240.c
 CC gfx/video_filters/upscale_mix_240x160_320x240.c
 CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
-CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/echo.c
+CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/panning.c
 CC libretro-common/audio/dsp_filters/phaser.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1203002 bytes (1175 KiB)
+Archive size: 1203007 bytes (1175 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -334,8 +334,8 @@ CC tasks/task_image.c
 CC tasks/task_playlist_manager.c
 CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
-CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_utf.c
+CC libretro-common/encodings/encoding_crc32.c
 CC libretro-common/encodings/encoding_base64.c
 CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
@@ -343,8 +343,8 @@ CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
 CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
-CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
+CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
@@ -440,15 +440,15 @@ CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
 CC menu/drivers/xmb.c
-CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
+CC menu/drivers/ozone.c
 CC menu/menu_setting.c
 CC menu/menu_driver.c
 CC menu/cbs/menu_cbs_ok.c
 CC menu/cbs/menu_cbs_cancel.c
 CC menu/cbs/menu_cbs_select.c
-CC menu/cbs/menu_cbs_info.c
 CC menu/cbs/menu_cbs_start.c
+CC menu/cbs/menu_cbs_info.c
 CC menu/cbs/menu_cbs_left.c
 CC menu/cbs/menu_cbs_right.c
 CC menu/cbs/menu_cbs_deferred_push.c
@@ -541,8 +541,8 @@ CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c
 CC gfx/video_filters/darken.c
 CC gfx/video_filters/epx.c
-CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/blargg_ntsc_snes.c
+CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/lq2x.c
 CC gfx/video_filters/phosphor2x.c
 CC gfx/video_filters/normal2x.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1203573 bytes (1176 KiB)
+Archive size: 1205042 bytes (1177 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -684,8 +684,8 @@ CC libretro-common/compat/compat_fnmatch.c
 CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
 CC core_info.c
-CC core_backup.c
 CC core_option_manager.c
+CC core_backup.c
 CC libretro-common/file/config_file.c
 CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
@@ -795,19 +795,19 @@ CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
 CC deps/7zip/Delta.c
 CC deps/7zip/LzFind.c
-CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaDec.c
+CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaEnc.c
-CC deps/7zip/Bra86.c
 CC deps/7zip/Bra.c
+CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
 CC deps/7zip/7zStream.c
 CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
-CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
+CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/formats/libchdr/libchdr_bitstream.c
 CC libretro-common/formats/libchdr/libchdr_cdrom.c
 CC libretro-common/formats/libchdr/libchdr_chd.c
@@ -833,8 +833,8 @@ CC tasks/task_netplay_find_content.c
 CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
-CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
+CC network/netplay/netplay_frontend.c
 CC tasks/task_decompress.c
 CC gfx/video_filters/2xsai.c
 CC gfx/video_filters/super2xsai.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1265846 bytes (1237 KiB)
+Archive size: 1265822 bytes (1237 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -999,8 +999,8 @@ CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
-CC libretro-common/features/features_cpu.c
 CC playlist.c
+CC libretro-common/features/features_cpu.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
@@ -1142,13 +1142,13 @@ CC gfx/video_filters/epx.c
 CC gfx/video_filters/scale2x.c
 CC gfx/video_filters/blargg_ntsc_snes.c
 CC gfx/video_filters/lq2x.c
-CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/phosphor2x.c
+CC gfx/video_filters/normal2x.c
 CC gfx/video_filters/normal2x_width.c
 CC gfx/video_filters/normal2x_height.c
 CC gfx/video_filters/normal4x.c
-CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid2x.c
+CC gfx/video_filters/scanline2x.c
 CC gfx/video_filters/grid3x.c
 CC gfx/video_filters/gameboy3x.c
 CC gfx/video_filters/gameboy4x.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1268254 bytes (1239 KiB)
+Archive size: 1265748 bytes (1237 KiB)
 Everything is Ok

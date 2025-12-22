@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 874063 bytes (854 KiB)
+Archive size: 874064 bytes (854 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -341,8 +341,8 @@ CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
-CC libretro-common/streams/stdin_stream.c
 CC libretro-common/file/retro_dirent.c
+CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 872758 bytes (853 KiB)
+Archive size: 872767 bytes (853 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 933778 bytes (912 KiB)
+Archive size: 933805 bytes (912 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -1086,8 +1086,8 @@ CC libretro-common/streams/trans_stream_pipe.c
 CC libretro-common/file/archive_file_7z.c
 CC deps/7zip/7zArcIn.c
 CC deps/7zip/7zBuf.c
-CC deps/7zip/7zCrc.c
 CC deps/7zip/7zCrcOpt.c
+CC deps/7zip/7zCrc.c
 CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
 CC deps/7zip/Delta.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 933035 bytes (912 KiB)
+Archive size: 933206 bytes (912 KiB)
 Everything is Ok

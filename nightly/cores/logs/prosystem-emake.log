@@ -104,8 +104,8 @@ CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
-CC gfx/font_driver.c
 CC gfx/video_filter.c
+CC gfx/font_driver.c
 CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
@@ -198,8 +198,8 @@ CC deps/7zip/7zCrc.c
 CC deps/7zip/7zCrcOpt.c
 CC deps/7zip/7zDec.c
 CC deps/7zip/CpuArch.c
-CC deps/7zip/Delta.c
 CC deps/7zip/LzFind.c
+CC deps/7zip/Delta.c
 CC deps/7zip/LzmaDec.c
 CC deps/7zip/Lzma2Dec.c
 CC deps/7zip/LzmaEnc.c
@@ -272,8 +272,8 @@ CC libretro-common/audio/dsp_filters/chorus.c
 CC libretro-common/audio/dsp_filters/crystalizer.c
 CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
-CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/panning.c
+CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/phaser.c
 CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 865992 bytes (846 KiB)
+Archive size: 865905 bytes (846 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -360,8 +360,8 @@ CC libretro-common/file/nbio/nbio_intf.c
 CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
-CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
+CC libretro-common/hash/lrc_hash.c
 CC input/input_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
@@ -438,8 +438,8 @@ CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
 CC menu/drivers/rgui.c
-CC menu/drivers/xmb.c
 CC menu/drivers/materialui.c
+CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
 CC menu/menu_setting.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 865889 bytes (846 KiB)
+Archive size: 865192 bytes (845 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 925544 bytes (904 KiB)
+Archive size: 925314 bytes (904 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -951,8 +951,8 @@ CC libretro-common/file/nbio/nbio_stdio.c
 CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
-CC libretro-common/file/file_path.c
 CC libretro-common/file/nbio/nbio_intf.c
+CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
@@ -984,8 +984,8 @@ CC core_info.c
 CC core_backup.c
 CC core_option_manager.c
 CC libretro-common/file/config_file.c
-CC libretro-common/file/config_file_userdata.c
 CC runtime_file.c
+CC libretro-common/file/config_file_userdata.c
 CC disk_index_file.c
 CC tasks/task_screenshot.c
 CC tasks/task_powerstate.c
@@ -1008,8 +1008,8 @@ CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
-CC input/bsv/bsvmovie.c
 CC libretro-common/audio/audio_mixer.c
+CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 924041 bytes (903 KiB)
+Archive size: 924562 bytes (903 KiB)
 Everything is Ok

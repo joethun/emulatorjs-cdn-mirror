@@ -26,8 +26,8 @@ CC ui/ui_companion_driver.c
 CC camera/camera_driver.c
 CC record/record_driver.c
 CC record/drivers/record_wav.c
-CC msg_hash.c
 CC command.c
+CC msg_hash.c
 CC intl/msg_hash_us.c
 CC libretro-common/queues/task_queue.c
 CC tasks/task_content.c
@@ -117,8 +117,8 @@ CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
 CC disk_control_interface.c
-CC libretro-common/audio/audio_mix.c
 CC tasks/task_audio_mixer.c
+CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1047056 bytes (1023 KiB)
+Archive size: 1046488 bytes (1022 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -345,8 +345,8 @@ CC libretro-common/file/retro_dirent.c
 CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
-CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/memory_stream.c
+CC libretro-common/streams/interface_stream.c
 CC libretro-common/streams/network_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
@@ -418,8 +418,8 @@ CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
 CC libretro-common/compat/compat_strcasestr.c
-CC libretro-common/compat/compat_strl.c
 CC libretro-common/formats/image_texture.c
+CC libretro-common/compat/compat_strl.c
 CC libretro-db/bintree.c
 CC libretro-db/libretrodb.c
 CC libretro-db/query.c
@@ -518,8 +518,8 @@ CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
 CC libretro-common/formats/json/rjson.c
-CC libretro-common/formats/image_transfer.c
 CC libretro-common/formats/m3u/m3u_file.c
+CC libretro-common/formats/image_transfer.c
 CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
 CC libretro-common/net/net_http_parse.c
@@ -568,8 +568,8 @@ CC libretro-common/audio/dsp_filters/echo.c
 CC libretro-common/audio/dsp_filters/eq.c
 CC libretro-common/audio/dsp_filters/iir.c
 CC libretro-common/audio/dsp_filters/panning.c
-CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/phaser.c
+CC libretro-common/audio/dsp_filters/reverb.c
 CC libretro-common/audio/dsp_filters/tremolo.c
 CC libretro-common/audio/dsp_filters/vibrato.c
 CC libretro-common/audio/dsp_filters/wahwah.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1046342 bytes (1022 KiB)
+Archive size: 1046839 bytes (1023 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -634,8 +634,8 @@ CC tasks/task_manual_content_scan.c
 CC tasks/task_core_backup.c
 CC libretro-common/encodings/encoding_utf.c
 CC libretro-common/encodings/encoding_crc32.c
-CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/encodings/encoding_base64.c
+CC libretro-common/compat/fopen_utf8.c
 CC libretro-common/compat/compat_strldup.c
 CC libretro-common/lists/file_list.c
 CC libretro-common/lists/dir_list.c
@@ -703,8 +703,8 @@ CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
 CC playlist.c
-CC verbosity.c
 CC libretro-common/features/features_cpu.c
+CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1108636 bytes (1083 KiB)
+Archive size: 1108664 bytes (1083 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -977,8 +977,8 @@ CC tasks/task_autodetect.c
 CC input/input_autodetect_builtin.c
 CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
-CC libretro-common/compat/compat_posix_string.c
 CC libretro-common/compat/compat_fnmatch.c
+CC libretro-common/compat/compat_posix_string.c
 CC cheat_manager.c
 CC core_info.c
 CC core_backup.c
@@ -1100,8 +1100,8 @@ CC deps/7zip/Bra86.c
 CC deps/7zip/BraIA64.c
 CC deps/7zip/Bcj2.c
 CC deps/7zip/7zFile.c
-CC deps/ibxm/ibxm.c
 CC deps/7zip/7zStream.c
+CC deps/ibxm/ibxm.c
 CC libretro-common/file/archive_file_zlib.c
 CC libretro-common/streams/trans_stream_zlib.c
 CC libretro-common/streams/rzip_stream.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1107692 bytes (1082 KiB)
+Archive size: 1107334 bytes (1082 KiB)
 Everything is Ok

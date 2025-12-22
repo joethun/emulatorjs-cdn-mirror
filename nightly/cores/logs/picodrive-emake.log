@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1062999 bytes (1039 KiB)
+Archive size: 1062998 bytes (1039 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1062317 bytes (1038 KiB)
+Archive size: 1062316 bytes (1038 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -756,8 +756,8 @@ CC menu/cbs/menu_cbs_label.c
 CC menu/cbs/menu_cbs_sublabel.c
 CC menu/cbs/menu_cbs_title.c
 CC menu/menu_displaylist.c
-CC gfx/gfx_widgets.c
 CC menu/menu_contentless_cores.c
+CC gfx/gfx_widgets.c
 CC gfx/widgets/gfx_widget_screenshot.c
 CC gfx/widgets/gfx_widget_volume.c
 CC gfx/widgets/gfx_widget_generic_message.c
@@ -765,8 +765,8 @@ CC gfx/widgets/gfx_widget_libretro_message.c
 CC gfx/widgets/gfx_widget_progress_message.c
 CC gfx/widgets/gfx_widget_load_content_animation.c
 CC tasks/task_overlay.c
-CC led/drivers/led_overlay.c
 CC gfx/drivers_font_renderer/stb.c
+CC led/drivers/led_overlay.c
 CC gfx/drivers_font_renderer/stb_unicode.c
 CC libretro-common/rthreads/rthreads.c
 CC gfx/video_thread_wrapper.c
@@ -818,8 +818,8 @@ CC libretro-common/formats/libchdr/libchdr_lzma.c
 CC libretro-common/formats/png/rpng.c
 CC libretro-common/formats/png/rpng_encode.c
 CC libretro-common/formats/bmp/rbmp_encode.c
-CC libretro-common/formats/image_transfer.c
 CC libretro-common/formats/json/rjson.c
+CC libretro-common/formats/image_transfer.c
 CC libretro-common/formats/m3u/m3u_file.c
 CC libretro-common/net/net_compat.c
 CC libretro-common/net/net_http.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1123087 bytes (1097 KiB)
+Archive size: 1123084 bytes (1097 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -947,8 +947,8 @@ CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
 CC libretro-common/memmap/memalign.c
-CC libretro-common/lists/linked_list.c
 CC libretro-common/file/nbio/nbio_stdio.c
+CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
@@ -1132,8 +1132,8 @@ CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
-CC gfx/video_filters/2xsai.c
 CC tasks/task_decompress.c
+CC gfx/video_filters/2xsai.c
 CC gfx/video_filters/super2xsai.c
 CC gfx/video_filters/supereagle.c
 CC gfx/video_filters/2xbr.c

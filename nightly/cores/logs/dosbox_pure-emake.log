@@ -67,8 +67,8 @@ CC libretro-common/file/file_path.c
 CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
-CC input/input_driver.c
 CC audio/audio_driver.c
+CC input/input_driver.c
 CC input/common/input_hid_common.c
 CC led/led_driver.c
 CC gfx/video_driver.c
@@ -110,13 +110,13 @@ CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
 CC libretro-common/utils/md5.c
-CC playlist.c
 CC libretro-common/features/features_cpu.c
+CC playlist.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
-CC disk_control_interface.c
 CC manual_content_scan.c
+CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
@@ -297,7 +297,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1810948 bytes (1769 KiB)
+Archive size: 1811001 bytes (1769 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -397,8 +397,8 @@ CC runtime_file.c
 CC disk_index_file.c
 CC tasks/task_screenshot.c
 CC tasks/task_powerstate.c
-CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler.c
+CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
 CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
@@ -414,8 +414,8 @@ CC libretro-common/playlists/label_sanitization.c
 CC libretro-common/time/rtime.c
 CC manual_content_scan.c
 CC disk_control_interface.c
-CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
+CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mixer.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
@@ -594,5 +594,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1809958 bytes (1768 KiB)
+Archive size: 1810292 bytes (1768 KiB)
 Everything is Ok

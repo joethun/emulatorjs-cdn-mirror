@@ -52,8 +52,8 @@ CC libretro-common/streams/stdin_stream.c
 CC libretro-common/streams/file_stream.c
 CC libretro-common/streams/file_stream_transforms.c
 CC libretro-common/streams/interface_stream.c
-CC libretro-common/streams/memory_stream.c
 CC libretro-common/streams/network_stream.c
+CC libretro-common/streams/memory_stream.c
 CC libretro-common/vfs/vfs_implementation.c
 CC libretro-common/lists/string_list.c
 CC libretro-common/string/stdstring.c
@@ -294,7 +294,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1190942 bytes (1164 KiB)
+Archive size: 1191566 bytes (1164 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -357,8 +357,8 @@ CC libretro-common/lists/linked_list.c
 CC libretro-common/lists/nested_list.c
 CC libretro-common/queues/generic_queue.c
 CC libretro-common/file/nbio/nbio_intf.c
-CC libretro-common/file/file_path_io.c
 CC libretro-common/file/file_path.c
+CC libretro-common/file/file_path_io.c
 CC file_path_special.c
 CC libretro-common/hash/lrc_hash.c
 CC audio/audio_driver.c
@@ -408,8 +408,8 @@ CC playlist.c
 CC libretro-common/features/features_cpu.c
 CC verbosity.c
 CC libretro-common/playlists/label_sanitization.c
-CC libretro-common/time/rtime.c
 CC manual_content_scan.c
+CC libretro-common/time/rtime.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
 CC libretro-common/audio/audio_mix.c
@@ -437,8 +437,8 @@ CC libretro-common/audio/conversion/s16_to_float.c
 CC libretro-common/audio/conversion/float_to_s16.c
 CC libretro-common/audio/conversion/mono_to_stereo_float.c
 CC libretro-common/audio/conversion/stereo_to_mono_float.c
-CC menu/drivers/rgui.c
 CC menu/drivers/materialui.c
+CC menu/drivers/rgui.c
 CC menu/drivers/xmb.c
 CC menu/drivers/ozone.c
 CC menu/menu_screensaver.c
@@ -529,8 +529,8 @@ CC network/natt.c
 CC tasks/task_netplay_lan_scan.c
 CC tasks/task_netplay_nat_traversal.c
 CC tasks/task_netplay_find_content.c
-CC tasks/task_http_emscripten.c
 CC tasks/task_pl_thumbnail_download.c
+CC tasks/task_http_emscripten.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
@@ -588,7 +588,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1190715 bytes (1163 KiB)
+Archive size: 1191382 bytes (1164 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -695,9 +695,9 @@ CC tasks/task_powerstate.c
 CC libretro-common/gfx/scaler/scaler.c
 CC libretro-common/gfx/scaler/pixconv.c
 CC libretro-common/gfx/scaler/scaler_int.c
-CC libretro-common/gfx/scaler/scaler_filter.c
 CC gfx/font_driver.c
 CC gfx/video_filter.c
+CC libretro-common/gfx/scaler/scaler_filter.c
 CC libretro-common/audio/resampler/audio_resampler.c
 CC libretro-common/audio/dsp_filter.c
 CC libretro-common/audio/resampler/drivers/sinc_resampler.c
@@ -710,8 +710,8 @@ CC libretro-common/time/rtime.c
 CC manual_content_scan.c
 CC disk_control_interface.c
 CC tasks/task_audio_mixer.c
-CC libretro-common/audio/audio_mix.c
 CC libretro-common/audio/audio_mixer.c
+CC libretro-common/audio/audio_mix.c
 CC input/bsv/bsvmovie.c
 CC audio/drivers_resampler/cc_resampler.c
 CC libretro-common/compat/compat_getopt.c
@@ -889,7 +889,7 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1261427 bytes (1232 KiB)
+Archive size: 1261400 bytes (1232 KiB)
 Everything is Ok
 make: Entering directory '/home/runner/ejs-runner/_work/build/build/compile/RetroArch'
 rm -rf obj-emscripten
@@ -972,8 +972,8 @@ CC gfx/gfx_thumbnail.c
 CC state_manager.c
 CC gfx/drivers_font_renderer/bitmapfont.c
 CC gfx/drivers_font_renderer/bitmapfont_10x10.c
-CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC tasks/task_autodetect.c
+CC gfx/drivers_font_renderer/bitmapfont_6x10.c
 CC input/input_autodetect_builtin.c
 CC input/input_keymaps.c
 CC libretro-common/queues/fifo_queue.c
@@ -1065,8 +1065,8 @@ CC tasks/task_overlay.c
 CC led/drivers/led_overlay.c
 CC gfx/drivers_font_renderer/stb.c
 CC gfx/drivers_font_renderer/stb_unicode.c
-CC libretro-common/rthreads/rthreads.c
 CC gfx/video_thread_wrapper.c
+CC libretro-common/rthreads/rthreads.c
 CC audio/audio_thread_wrapper.c
 CC libretro-common/formats/xml/rxml.c
 CC libretro-common/formats/logiqx_dat/logiqx_dat.c
@@ -1127,8 +1127,8 @@ CC network/natt.c
 CC tasks/task_netplay_lan_scan.c
 CC tasks/task_netplay_nat_traversal.c
 CC tasks/task_netplay_find_content.c
-CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_http_emscripten.c
+CC tasks/task_pl_thumbnail_download.c
 CC tasks/task_core_updater.c
 CC network/netplay/netplay_frontend.c
 CC network/netplay/netplay_room_parse.c
@@ -1186,5 +1186,5 @@ Items to compress: 2
 
 
 Files read from disk: 2
-Archive size: 1260540 bytes (1231 KiB)
+Archive size: 1260531 bytes (1231 KiB)
 Everything is Ok
