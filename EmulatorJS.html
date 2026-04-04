@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>EmulatorJS</title>
+    <link rel=icon href=https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/favicon.ico
+        sizes="16x16 32x32 48x48 64x64" type=image/vnd.microsoft.icon>
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { fontFamily: { sans: ['Inter', 'sans-serif'] } } } }
+    </script>
+    <style>
+        #display { width: 100%; height: 100%; }
+    </style>
+</head>
+
+<body class="bg-black text-white font-sans min-h-screen flex flex-col items-center justify-center gap-4">
+
+    <div id="top" class="flex flex-col items-center gap-4">
+        <img src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/Logo-light.png"
+            alt="EmulatorJS Logo" class="w-48 h-48">
+    </div>
+
+    <div id="box"
+        class="relative flex flex-col items-center justify-center gap-3 w-[30em] h-[20em] max-w-[85vw] max-h-[80vh] bg-[#333] border-2 border-[#555] rounded-lg text-[#aaa] font-bold text-xl text-center cursor-pointer transition-colors duration-200 hover:border-[#38f] hover:text-[#ddd] p-4"
+        ondragover="this.setAttribute('drag',''); event.preventDefault()"
+        ondragleave="this.removeAttribute('drag')"
+        ondrop="event.preventDefault(); this.removeAttribute('drag')">
+        <input type=file id=input class="absolute inset-0 w-full h-full opacity-0 cursor-pointer">
+        <span class="pointer-events-none">Drag ROM here or click to browse</span>
+    </div>
+
+    <select id="channelSelect"
+        class="bg-[#444] border border-[#555] text-[#aaa] font-bold rounded-md px-4 py-2 w-48 cursor-pointer transition-colors duration-200 hover:bg-[#666] hover:text-[#ddd] focus:outline-none focus:ring-2 focus:ring-[#38f]">
+        <option value="https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/stable/">Stable</option>
+        <option value="https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/nightly/">Nightly</option>
+    </select>
+
+    <script>
+        let enableDebug = false;
+        let enableThreads = false;
+        const urlParams = new URLSearchParams(window.location.search);
+
+        if (parseInt(urlParams.get('debug')) === 1 || urlParams.get('debug') === "true") {
+            enableDebug = true;
+            console.log("Debug is enabled");
+        } else {
+            console.log("Debug is disabled");
+        }
+
+        if (parseInt(urlParams.get('threads')) === 1 || urlParams.get('threads') === "true") {
+            if (window.SharedArrayBuffer) {
+                enableThreads = true;
+                console.log("Threads are enabled");
+            } else {
+                console.warn("Threads are disabled as SharedArrayBuffer is not available.");
+                console.log("Threads are disabled");
+            }
+        } else {
+            console.log("Threads are disabled");
+        }
+
+        if (urlParams.get('rom')) {
+            console.log(`Loading ROM from URL: roms/${urlParams.get('rom')}`);
+            run(false, urlParams.get('rom'));
+        }
+
+        async function run(upload, file) {
+            const url = upload ? input.files[0] : `roms/${file}`;
+            const parts = upload ? input.files[0].name.split(".") : file.split(".");
+
+            const core = await (async (ext) => {
+                if (["fds", "nes", "unif", "unf"].includes(ext)) return "nes"
+                if (["smc", "fig", "sfc", "gd3", "gd7", "dx2", "bsx", "swc"].includes(ext)) return "snes"
+                if (["z64", "n64"].includes(ext)) return "n64"
+                if (["pce"].includes(ext)) return "pce"
+                if (["ngp", "ngc"].includes(ext)) return "ngp"
+                if (["ws", "wsc"].includes(ext)) return "ws"
+                if (["col", "cv"].includes(ext)) return "coleco"
+                if (["d64"].includes(ext)) return "vice_x64sc"
+                if (["nds", "gba", "gb"].includes(ext)) return ext
+
+                return await new Promise(resolve => {
+                    const coreValues = {
+                        "Nintendo NES": "nes", "Nintendo GB": "gb", "Nintendo SNES": "snes",
+                        "Nintendo VB": "vb", "Nintendo 64": "n64", "Nintendo GBC": "gbc",
+                        "Nintendo GBA": "gba", "Nintendo DS": "nds",
+                        "Sega MS": "segaMS", "Sega Gen/MD": "segaMD", "Sega GG": "segaGG",
+                        "Sega CD": "segaCD", "Sega 32X": "sega32x", "Sega Saturn": "segaSaturn",
+                        "Sony PS1": "psx", "Sony PSP": "psp",
+                        "Atari 2600": "atari2600", "Atari 5200": "atari5200",
+                        "Atari 7800": "atari7800", "Atari Lynx": "lynx", "Atari Jaguar": "jaguar",
+                        "Panasonic 3DO": "opera", "Arcade (FBNeo)": "arcade",
+                        "Arcade (M.A.M.E)": "mame2003_plus", "Microsoft DOS": "dosbox_pure",
+                        "Commodore PET": "vice_xpet", "Commodore VIC20": "vice_xvic",
+                        "Commodore Amiga": "amiga", "Commodore 64": "vice_x64",
+                        "Commodore 128": "vice_x128", "Commodore P/4": "vice_xplus4",
+                        "ColecoVision": "coleco", "NEC TurboGrafx-16": "pce",
+                        "NEC PC-FX": "pcfx", "SNK NGP": "ngp", "Bandai WS": "ws"
+                    };
+
+                    const cores = Object.keys(coreValues).sort().reduce((obj, key) => {
+                        obj[key] = coreValues[key]; return obj;
+                    }, {});
+
+                    const btn = document.createElement("button");
+                    const sel = document.createElement("select");
+
+                    btn.className = "bg-[#444] hover:bg-[#666] text-[#aaa] hover:text-[#ddd] font-bold border border-[#555] rounded-md px-6 py-2 transition-colors duration-200 cursor-pointer";
+                    sel.className = "bg-[#444] border border-[#555] text-[#aaa] font-bold rounded-md px-3 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-[#38f]";
+
+                    for (const type in cores) {
+                        const opt = document.createElement("option");
+                        opt.value = cores[type];
+                        opt.textContent = type;
+                        sel.appendChild(opt);
+                    }
+
+                    btn.onclick = () => resolve(sel[sel.selectedIndex].value);
+                    btn.textContent = "Load Game";
+                    box.innerHTML = "";
+                    box.appendChild(sel);
+                    box.appendChild(btn);
+                });
+            })(parts.pop());
+
+            const div = document.createElement("div");
+            const sub = document.createElement("div");
+            const script = document.createElement("script");
+
+            sub.id = "game";
+            div.id = "display";
+
+            const top = document.getElementById("top");
+            const channelSelect = document.getElementById("channelSelect");
+            const dataPath = channelSelect.value;
+            top.remove();
+            box.remove();
+            channelSelect.remove();
+
+            document.body.className = "";
+            document.body.style.cssText = "margin:0; padding:0; background:#000; width:100%; height:100%; overflow:hidden;";
+
+            div.appendChild(sub);
+            document.body.appendChild(div);
+
+            window.EJS_player = "#game";
+            window.EJS_gameName = parts.shift();
+            window.EJS_biosUrl = "";
+            window.EJS_gameUrl = url;
+            window.EJS_core = core;
+            window.EJS_pathtodata = dataPath;
+            window.EJS_startOnLoaded = true;
+            window.EJS_disableDatabases = true;
+            window.EJS_threads = enableThreads;
+
+            script.src = dataPath + "loader.js";
+            document.body.appendChild(script);
+        }
+
+        input.onchange = () => run(true);
+        box.ondragover = () => box.setAttribute("drag", "");
+        box.ondragleave = () => box.removeAttribute("drag");
+    </script>
+</body>
+
+</html>
