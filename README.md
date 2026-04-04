@@ -1,6 +1,5 @@
 <div align="center">
   <img width="300" src="https://cdn.jsdelivr.net/gh/EmulatorJS/EmulatorJS@main/docs/Logo-light.png">
-  <h3>EmulatorJS CDN Mirror</h3>
   <p>A daily mirror of the EmulatorJS stable and nightly CDNs, served via jsDelivr.</p>
 
   ![Mirror - Stable](https://github.com/joethun/emulatorjs-cdn-mirror/actions/workflows/mirror-stable.yml/badge.svg)
