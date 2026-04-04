@@ -21,16 +21,6 @@ Set `EJS_pathtodata` in your EmulatorJS config to one of the URLs below:
 
 Stable is recommended as nightly could be unstable.
 
-## Example
+---
 
-```html
-<script>
-  fetch("https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/EmulatorJS.html")
-    .then(res => res.text())
-    .then(html => {
-      document.open();
-      document.write(html);
-      document.close();
-    });
-</script>
-```
+If you want the easiest method to use EmulatorJS on Google Sites, copy the HTML from 'EmulatorJS.html' in the source code and embed it. 
