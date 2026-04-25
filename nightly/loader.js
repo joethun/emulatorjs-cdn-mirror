@@ -199,8 +199,7 @@ const config = {
     additionalShaders: window.EJS_shaders,
     fixedSaveInterval: window.EJS_fixedSaveInterval,
     disableAutoUnload: window.EJS_disableAutoUnload,
-    disableBatchBootup: window.EJS_disableBatchBootup,
-    askBeforeExit: window.EJS_askBeforeExit
+    disableBatchBootup: window.EJS_disableBatchBootup
 };
 
 async function prepareLanguage() {
@@ -249,8 +248,7 @@ async function prepareLanguage() {
         ["loadState", window.EJS_onLoadState],
         ["saveState", window.EJS_onSaveState],
         ["loadSave", window.EJS_onLoadSave],
-        ["saveSave", window.EJS_onSaveSave],
-        ["exit", window.EJS_onExit]
+        ["saveSave", window.EJS_onSaveSave]
     ];
 
     handlers.forEach(([event, callback]) => {
