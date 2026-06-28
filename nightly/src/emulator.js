@@ -101,83 +101,76 @@ class EmulatorJS {
                 fullPath = this.config.filePaths[path.split("/").pop()];
             }
 
-            // Delegate all URL downloads (http, https, blob, data, etc.) to EJS_Download
-            try {
-                const onProgress = progress instanceof Function ? (status, percentage, loaded, total) => {
-                    if (status === "downloading") {
-                        const progressText = total ? " " + Math.floor(percentage).toString() + "%" : " " + (loaded / 1048576).toFixed(2) + "MB";
-                        progress(progressText);
+            const attempt = async (targetUrl) => {
+                try {
+                    const onProgress = progress instanceof Function ? (status, percentage, loaded, total) => {
+                        if (status === "downloading") {
+                            const progressText = total ? " " + Math.floor(percentage).toString() + "%" : " " + (loaded / 1048576).toFixed(2) + "MB";
+                            progress(progressText);
+                        }
+                    } : null;
+
+                    const onComplete = (success, result) => {
+                        if (!success) {
+                            console.error("Download failed in onComplete:", result);
+                        }
+                    };
+
+                    const responseType = opts.responseType || "arraybuffer";
+                    const method = opts.method || "GET";
+                    const headers = {};
+                    const timeout = 30000;
+
+                    const cacheItem = await this.downloader.downloadFile(
+                        targetUrl,
+                        type,
+                        method,
+                        headers,
+                        null,
+                        onProgress,
+                        onComplete,
+                        timeout,
+                        responseType,
+                        forceExtract,
+                        dontCache,
+                        dontExtract
+                    );
+
+                    if (!cacheItem) {
+                        return { headers: {} };
                     }
-                } : null;
 
-                const onComplete = (success, result) => {
-                    if (!success) {
-                        console.error("Download failed in onComplete:", result);
-                    }
-                };
-
-                const responseType = opts.responseType || "arraybuffer";
-                const method = opts.method || "GET";
-                const headers = {};
-                const timeout = 30000;
-
-                const cacheItem = await this.downloader.downloadFile(
-                    fullPath,
-                    type,
-                    method,
-                    headers,
-                    null,
-                    onProgress,
-                    onComplete,
-                    timeout,
-                    responseType,
-                    forceExtract,
-                    dontCache,
-                    dontExtract
-                );
-
-                // Handle HEAD requests (returns null)
-                if (!cacheItem) {
-                    resolve({ headers: {} });
-                    return;
-                }
-
-                // Extract the data from the cache item
-                if (cacheItem.files && cacheItem.files.length > 0) {
-                    // If there are files, return the entire cache item
-                    // so the caller can access all extracted files
-                    if (cacheItem.files.length > 0) {
-                        resolve({
+                    if (cacheItem.files && cacheItem.files.length > 0) {
+                        return {
                             data: cacheItem,
                             headers: {
                                 "content-length": cacheItem.files.reduce((sum, f) => sum + (f.bytes.byteLength || 0), 0)
                             }
-                        });
-                    } else {
-                        let data = cacheItem.files[0].bytes;
-                        
-                        // Convert to appropriate format based on responseType
-                        if (responseType === "text" || (opts.type && opts.type.toLowerCase() === "text")) {
-                            const decoder = new TextDecoder();
-                            data = decoder.decode(data);
-                            try { data = JSON.parse(data) } catch(e) {}
-                        }
-
-                        resolve({
-                            data: data,
-                            headers: {
-                                "content-length": data.byteLength || data.length
-                            }
-                        });
+                        };
                     }
-                } else {
+
                     console.error("Invalid cache item returned:", cacheItem);
-                    resolve(-1);
+                    return -1;
+                } catch(error) {
+                    console.error("Download error:", error);
+                    return -1;
                 }
-            } catch(error) {
-                console.error("Download error:", error);
-                resolve(-1);
+            };
+
+            let result = await attempt(fullPath);
+
+            const typeConfig = Object.values(this.downloadType).find((t) => t.name === type);
+            if (result === -1 && !notWithPath && typeConfig && typeConfig.cdnFallback) {
+                console.log("[EJS " + type + "] " + path + " not found locally, attempting to fetch from the emulatorjs cdn.");
+                console.error("**THIS METHOD IS A FAILSAFE, AND NOT OFFICIALLY SUPPORTED. USE AT YOUR OWN RISK**");
+                const version = this.ejs_version.endsWith("-beta") ? "nightly" : this.ejs_version;
+                result = await attempt(`https://cdn.emulatorjs.org/${version}/data/${path}`);
+                if (result !== -1) {
+                    console.warn("File was not found locally, but was found on the emulatorjs cdn.\nIt is recommended to download the stable release from here: https://cdn.emulatorjs.org/releases/");
+                }
             }
+
+            resolve(result);
         });
     }
     toData(data, rv) {
@@ -354,7 +347,7 @@ class EmulatorJS {
         // Populate downloadTypes
         this.downloadType = {
             "rom": { "name": "ROM", "dontCache": false, "dontExtractIfCore": ["arcade", "fbneo", "fbalpha2012_cps1", "fbalpha2012_cps2", "same_cdi", "mame", "mame2003_plus", "mame2003"] },
-            "core": { "name": "Core", "dontCache": false },
+            "core": { "name": "Core", "dontCache": false, "cdnFallback": true },
             "bios": { "name": "BIOS", "dontCache": false, "dontExtractIfCore": ["arcade", "fbneo", "fbalpha2012_cps1", "fbalpha2012_cps2", "same_cdi", "mame", "mame2003_plus", "mame2003"] },
             "parent": { "name": "Parent", "dontCache": false },
             "patch": { "name": "Patch", "dontCache": false },
@@ -735,25 +728,16 @@ class EmulatorJS {
             // Download the core
             console.log("[EJS Core] Downloading core:", filename);
             const corePath = "cores/" + filename;
-            let res = await this.downloadFile(corePath, this.downloadType.core.name, (progress) => {
+            const res = await this.downloadFile(corePath, this.downloadType.core.name, (progress) => {
                 this.textElem.innerText = this.localization("Download Game Core") + progress;
             }, false, { responseType: "arraybuffer", method: "GET" }, true, this.downloadType.core.dontCache);
             if (res === -1) {
-                console.log("File not found, attemping to fetch from emulatorjs cdn.");
-                console.error("**THIS METHOD IS A FAILSAFE, AND NOT OFFICIALLY SUPPORTED. USE AT YOUR OWN RISK**");
-                let version = this.ejs_version.endsWith("-beta") ? "nightly" : this.ejs_version;
-                res = await this.downloadFile(`https://cdn.emulatorjs.org/${version}/data/${corePath}`, this.downloadType.core.name, (progress) => {
-                    this.textElem.innerText = this.localization("Download Game Core") + progress;
-                }, true, { responseType: "arraybuffer", method: "GET" }, true, this.downloadType.core.dontCache);
-                if (res === -1) {
-                    if (!this.supportsWebgl2) {
-                        this.startGameError(this.localization("Outdated graphics driver"));
-                    } else {
-                        this.startGameError(this.localization("Error downloading core") + " (" + filename + ")");
-                    }
-                    return;
+                if (!this.supportsWebgl2) {
+                    this.startGameError(this.localization("Outdated graphics driver"));
+                } else {
+                    this.startGameError(this.localization("Error downloading core") + " (" + filename + ")");
                 }
-                console.warn("File was not found locally, but was found on the emulatorjs cdn.\nIt is recommended to download the stable release from here: https://cdn.emulatorjs.org/releases/");
+                return;
             }
 
             // Core download and caching handled by EJS_Download
@@ -1343,17 +1327,19 @@ class EmulatorJS {
         this.gamepad = new GamepadHandler(); //https://github.com/ethanaobrien/Gamepad
         this.gamepad.on("connected", (e) => {
             if (!this.gamepadLabels) return;
+            const gamepadSelection = this.getGamepadSelectionValue(e.gamepadIndex);
+            if (!gamepadSelection) return;
             for (let i = 0; i < this.gamepadSelection.length; i++) {
                 if (this.gamepadSelection[i] === "") {
-                    this.gamepadSelection[i] = this.gamepad.gamepads[e.gamepadIndex].id + "_" + this.gamepad.gamepads[e.gamepadIndex].index;
+                    this.gamepadSelection[i] = gamepadSelection;
                     break;
                 }
             }
             this.updateGamepadLabels();
         })
         this.gamepad.on("disconnected", (e) => {
-            const gamepadIndex = this.gamepad.gamepads.indexOf(this.gamepad.gamepads.find(f => f.index == e.gamepadIndex));
-            const gamepadSelection = this.gamepad.gamepads[gamepadIndex].id + "_" + this.gamepad.gamepads[gamepadIndex].index;
+            const gamepadSelection = this.getGamepadSelectionValue(e.gamepadIndex);
+            if (!gamepadSelection) return;
             for (let i = 0; i < this.gamepadSelection.length; i++) {
                 if (this.gamepadSelection[i] === gamepadSelection) {
                     this.gamepadSelection[i] = "";
@@ -1392,6 +1378,13 @@ class EmulatorJS {
             }
             this.gamepadLabels[i].value = this.gamepadSelection[i] || "notconnected";
         }
+    }
+    getGamepadSelectionValue(gamepadIndex) {
+        const gamepad = this.gamepad.gamepads.find((candidate) => candidate && candidate.index === gamepadIndex);
+        if (!gamepad) {
+            return null;
+        }
+        return gamepad.id + "_" + gamepad.index;
     }
     createLink(elem, link, text, useP) {
         const elm = this.createElement("a");
@@ -3862,7 +3855,11 @@ class EmulatorJS {
     }
     gamepadEvent(e) {
         if (!this.started) return;
-        const gamepadIndex = this.gamepadSelection.indexOf(this.gamepad.gamepads[e.gamepadIndex].id + "_" + this.gamepad.gamepads[e.gamepadIndex].index);
+        const gamepadSelection = this.getGamepadSelectionValue(e.gamepadIndex);
+        if (!gamepadSelection) {
+            return;
+        }
+        const gamepadIndex = this.gamepadSelection.indexOf(gamepadSelection);
         if (gamepadIndex < 0) {
             return; // Gamepad not set anywhere
         }
