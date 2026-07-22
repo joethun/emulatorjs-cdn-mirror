@@ -768,6 +768,9 @@ class EmulatorJS {
         parts.splice(parts.length - 1, 1);
         return parts.join(".");
     }
+    getFileNameTimestamp(date) {
+        return date.toISOString().replace(/[-:]/g, "").replace(/\.\d{3}Z$/, "Z");
+    }
     saveInBrowserSupported() {
         return !!window.indexedDB && (typeof this.config.gameName === "string" || !this.config.gameUrl.startsWith("blob:"));
     }
@@ -1201,8 +1204,9 @@ class EmulatorJS {
                 }
             }
             this.menu.open();
-            if (this.isSafari && this.isMobile) {
-                //Safari is --- funny
+            if (this.isSafari && (this.isMobile || this.hasTouchScreen)) {
+                // iPadOS can use a desktop Safari user agent, so touch support
+                // is a more reliable fallback than mobile user-agent detection.
                 this.checkStarted();
             }
 
@@ -1668,8 +1672,7 @@ class EmulatorJS {
         let screenshotUrl;
         const screenshot = addButton("Take Screenshot", false, () => {
             if (screenshotUrl) URL.revokeObjectURL(screenshotUrl);
-            const date = new Date();
-            const fileName = this.getBaseFileName() + "-" + date.getMonth() + "-" + date.getDate() + "-" + date.getFullYear();
+            const fileName = this.getBaseFileName() + "-" + this.getFileNameTimestamp(new Date());
             this.screenshot((blob, format) => {
                 screenshotUrl = URL.createObjectURL(blob);
                 const a = this.createElement("a");
@@ -1685,7 +1688,20 @@ class EmulatorJS {
             if (screenMediaRecorder !== null) {
                 screenMediaRecorder.stop();
             }
-            screenMediaRecorder = this.screenRecord();
+            const recorder = this.screenRecord();
+            if (recorder === null) {
+                return;
+            }
+            screenMediaRecorder = recorder;
+            const resetScreenRecordingButtons = () => {
+                if (screenMediaRecorder === recorder) {
+                    screenMediaRecorder = null;
+                    startScreenRecording.removeAttribute("hidden");
+                    stopScreenRecording.setAttribute("hidden", "hidden");
+                }
+            };
+            screenMediaRecorder.addEventListener("stop", resetScreenRecordingButtons, { once: true });
+            screenMediaRecorder.addEventListener("error", resetScreenRecordingButtons, { once: true });
             startScreenRecording.setAttribute("hidden", "hidden");
             stopScreenRecording.removeAttribute("hidden");
             hideMenu();
@@ -3133,6 +3149,8 @@ class EmulatorJS {
                 { id: 11, label: this.localization("R1") },
                 { id: 12, label: this.localization("L2") },
                 { id: 13, label: this.localization("R2") },
+                { id: 14, label: this.localization("L3") },
+                { id: 15, label: this.localization("R3") },
                 { id: 19, label: this.localization("L STICK UP") },
                 { id: 18, label: this.localization("L STICK DOWN") },
                 { id: 17, label: this.localization("L STICK LEFT") },
@@ -6364,10 +6382,9 @@ class EmulatorJS {
         recorder.addEventListener("stop", () => {
             const blob = new Blob(chunks);
             const url = URL.createObjectURL(blob);
-            const date = new Date();
             const a = document.createElement("a");
             a.href = url;
-            a.download = this.getBaseFileName() + "-" + date.getMonth() + "-" + date.getDate() + "-" + date.getFullYear() + "." + captureFormat;
+            a.download = this.getBaseFileName() + "-" + this.getFileNameTimestamp(new Date()) + "." + captureFormat;
             a.click();
 
             animation = false;
