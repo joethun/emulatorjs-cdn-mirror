@@ -1,1 +1,1 @@
-{ "core": "azahar", "buildStart": "2026-05-16T17:21:00+00:00", "buildEnd": "2026-05-16T17:24:12+00:00", "options": { "requireThreads": true, "requiresWebgl2": true, "supportsMouse": true, "useKeyboard": true } }
+{ "core": "azahar", "buildStart": "2026-07-25T17:29:17+00:00", "buildEnd": "2026-07-25T17:32:33+00:00", "options": { "requireThreads": true, "requiresWebgl2": true, "supportsMouse": true, "useKeyboard": true } }
