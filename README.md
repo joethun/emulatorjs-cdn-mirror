@@ -21,5 +21,3 @@ Set `EJS_pathtodata` in your EmulatorJS config to one of the URLs below:
 Stable is recommended as nightly could have bugs.
 
 ---
-
-If you want the easiest method to use EmulatorJS on Google Sites, copy the HTML from 'EmulatorJS.html' in the source code and embed it. 
