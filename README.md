@@ -19,5 +19,3 @@ Set `EJS_pathtodata` in your EmulatorJS config to one of the URLs below:
 | Nightly | `https://cdn.jsdelivr.net/gh/joethun/emulatorjs-cdn-mirror@main/nightly/` |
 
 Stable is recommended as nightly could have bugs.
-
----
